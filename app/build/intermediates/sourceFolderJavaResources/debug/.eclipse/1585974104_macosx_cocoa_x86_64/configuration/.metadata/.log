@@ -1,0 +1,13 @@
+!SESSION 2017-01-15 20:30:36.207 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/vladgets/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data @noDefault -keyring /Users/vladgets/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-01-15 20:30:39.768
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.metadata 1 0 2017-01-15 20:31:52.744
+!MESSAGE No translation source unavailable. Default language will be used.

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="toolbar_height">143</integer>
+    <string name="xScale">xScale</string>
+    <string name="yScale">yScale</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<com.magnifis.parking.views.ScalableLLShort
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/ParkingType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="43px" />
+
+    <TextView
+        android:id="@+id/ParkingHrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="23px" />
+
+    <com.magnifis.parking.views.ScalableLLShort
+        android:id="@+id/Rates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Rates:"
+            android:textSize="23px"
+            android:textColor="#c3baba"
+         />
+        
+    </com.magnifis.parking.views.ScalableLLShort>
+
+</com.magnifis.parking.views.ScalableLLShort>

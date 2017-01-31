@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/menu_preferences"  android:icon="@android:drawable/ic_menu_preferences" android:title="Settings"/>
+   <item android:id="@+id/menu_teach" android:title="Teach" android:icon="@drawable/teach_robin_grey" />
+   <item android:id="@+id/menu_feedback" android:title="Feedback" android:icon="@drawable/ic_menu_compose" />
+   <item android:id="@+id/menu_share_robin" android:title="Share Robin" android:icon="@drawable/ic_menu_share" />
+   <item android:id="@+id/menu_search" android:title="Type" android:icon="@drawable/ic_kbd" />
+</menu>
+    

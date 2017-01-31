@@ -1,0 +1,731 @@
+package com.magnifis.parking.cmd;
+
+
+import static com.magnifis.parking.utils.BaseUtils.isEmpty;
+import static com.magnifis.parking.utils.Utils.*;
+
+import java.lang.ref.WeakReference;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import android.app.Activity;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.database.DatabaseUtils;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.provider.Contacts.People;
+import android.provider.ContactsContract;
+import android.telephony.PhoneNumberUtils;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.Layout.Alignment;
+import android.text.style.AlignmentSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.ImageSpan;
+import android.text.style.StyleSpan;
+import android.text.style.TextAppearanceSpan;
+import android.util.Pair;
+import android.view.Gravity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
+
+import com.google.i18n.phonenumbers.NumberParseException;
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat;
+import com.google.i18n.phonenumbers.Phonenumber;
+import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber;
+import com.magnifis.parking.Abortable;
+import com.magnifis.parking.App;
+import com.magnifis.parking.Config;
+import com.magnifis.parking.phonebook.IPhonebookMatcher;
+import com.magnifis.parking.Launchers;
+import com.magnifis.parking.Log;
+import com.magnifis.parking.MainActivity;
+import com.magnifis.parking.phonebook.PhoneticMatcher;
+import com.magnifis.parking.MultipleEventHandler;
+import com.magnifis.parking.MultipleEventHandler.EventSource;
+import com.magnifis.parking.OurAsyncTask;
+import com.magnifis.parking.Output;
+import com.magnifis.parking.R;
+import com.magnifis.parking.SmsActivity;
+import com.magnifis.parking.TextMessageQue;
+import com.magnifis.parking.UnderstandingProcessor;
+import com.magnifis.parking.UnderstandingProcessorBase;
+import com.magnifis.parking.VR;
+import com.magnifis.parking.VoiceIO;
+import com.magnifis.parking.bubbles.SpannedTextBubbleContent;
+import com.magnifis.parking.cmd.etc.CmdHandlerHolder;
+import com.magnifis.parking.cmd.i.ActivityResultHandler;
+import com.magnifis.parking.cmd.i.ClientStateInformer;
+import com.magnifis.parking.cmd.i.ICmdHandlerHolder;
+import com.magnifis.parking.cmd.i.IIntentHandler;
+import com.magnifis.parking.cmd.i.LocalCommandHandler;
+import com.magnifis.parking.cmd.i.MagReplyHandler;
+import com.magnifis.parking.cmd.i.OnBeforeListeningHandler;
+import com.magnifis.parking.cmd.i.OnListeningAbortedHandler;
+import com.magnifis.parking.cmd.i.OnResumeHandler;
+import com.magnifis.parking.db.RobinDB;
+import com.magnifis.parking.feed.SmsFeedController;
+import com.magnifis.parking.messaging.Message;
+import com.magnifis.parking.model.BrokenPhoneNumber;
+import com.magnifis.parking.model.CalleeAssociation;
+import com.magnifis.parking.model.CalleeAssociationCR;
+import com.magnifis.parking.model.CmdAlias;
+import com.magnifis.parking.model.ContactRecordBase;
+import com.magnifis.parking.model.ContactRecord;
+import com.magnifis.parking.model.MagReply;
+import com.magnifis.parking.model.QueryInterpretation;
+import com.magnifis.parking.model.Understanding;
+import com.magnifis.parking.model.UnderstandingStatus;
+import com.magnifis.parking.phonebook.SearchResult;
+import com.magnifis.parking.phonebook.NeoPhonebookMatcher;
+import com.magnifis.parking.phonebook.PhoneBook;
+import com.magnifis.parking.suzie.SuzieService;
+import com.magnifis.parking.tts.MyTTS;
+import com.magnifis.parking.utils.BaseUtils;
+import com.magnifis.parking.utils.Langutils;
+import com.magnifis.parking.utils.CommonNames;
+import com.magnifis.parking.utils.Translit;
+import com.magnifis.parking.utils.Utils;
+import com.magnifis.parking.views.DecoratedListView;
+
+public class SendCmdHandler 
+  extends CmdHandlerBase
+  implements 
+  	 LocalCommandHandler, 
+     Abortable, MagReplyHandler, 
+     ClientStateInformer, OnListeningAbortedHandler ,
+     OnBeforeListeningHandler
+{
+	final static String TAG=SendCmdHandler.class.getSimpleName();
+	
+	private int state = 0;
+	private int silenceCounter=0;
+	private final static int DICTATE_NAME = 1;
+	private final static int DICTATE_MSG = 2;
+	private final static int YES_NO = 3;
+	public final static int DICTATION_MAX_COUNTER = 2;
+	private ArrayList<String> full_text = new ArrayList<String>();
+	private static final boolean DO_DICTATION_THROUGH_SERVER = true;
+	
+    private  void setState(int newState) {
+		state = newState;
+    }
+    
+	public SendCmdHandler(Context context) {
+		super(context);	
+	}
+
+	
+	@Override
+	public String getClientStateName() {
+		if (isTimeoutTooLong()) {
+			inactivate();
+			Log.d(TAG, " deactivating by timeout ");
+			return null;
+		}
+		
+    	switch (state) {
+		case DICTATE_NAME:
+			 return ClientStateInformer.SN_DICTATE_NAME;
+		case DICTATE_MSG:
+             return ClientStateInformer.SN_DICTATE_MSG_NEW;
+		case YES_NO:
+            return ClientStateInformer.SN_YES_NO;
+		}
+    	return null;
+	}
+	
+	private Understanding sendCommandUnderstanding=null;
+	//private MagReply sendCommandReply=null;
+
+	/********
+  <!-- dictate name -->
+<reply>
+<query>vasya</query>
+<gps_location>
+<lat>31.843073</lat>
+<lon>35.242203</lon>
+</gps_location>
+<command>dlg_dictation</command>
+<message>vasya</message>
+<query_interpretation/>
+</reply>
+
+    ****/
+	@Override
+	public boolean handleReplyInBg(MagReply reply) {
+		Understanding understanding=reply.getUnderstanding(); 
+		
+		touchLastInteractionTime();
+		 
+		if (state == YES_NO)
+			return true;
+		
+		switch(understanding.getCommandCode()) {
+		case Understanding.CMD_REPLY: 
+			 if (state==0&&sendCommandUnderstanding==null) {
+			   Message m=App.self.getLastMessageRead();
+			   if (m!=null) {
+				   if (!Config.allow_to_reply_sms_multiple_times)
+				     App.self.setLastMessageRead(null);
+				   String phone=m.getSender().getAddress();
+				   
+				   understanding
+				    .setCommandByCode(Understanding.CMD_SEND)
+				    .setAction("sms")
+				    .setNumber(true)
+				    .setDescription(phone)
+				  ;
+				   
+				  recipientRecord=PhoneBook.getContactWithBestName(recipient=phone);
+		
+				  return handleReplyInBg(reply);
+			   }
+			 }
+			 inactivate();
+			 return false;
+		case Understanding.CMD_DICTATE_NEW:
+		case Understanding.CMD_DICTATE:
+			 return true;
+		case Understanding.CMD_FLASHLIGHT_ON:
+			//if (context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH))
+			Camera cam = Camera.open();     
+			Parameters p = cam.getParameters();
+			p.setFlashMode(Parameters.FLASH_MODE_TORCH);
+			cam.setParameters(p);
+			cam.startPreview();			
+			return true;
+		case Understanding.CMD_FLASHLIGHT_OFF:
+			//if (context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH))
+			Camera cam = Camera.open();     
+			Parameters p = cam.getParameters();
+			p.setFlashMode(Parameters.FLASH_MODE_TORCH);
+			cam.setParameters(p);
+			cam.stopPreview();
+			cam.release();
+  			return true;
+		case Understanding.CMD_SEND:
+			if (state == DICTATE_NAME) {
+				understanding.fixContactNamesDictation();
+				sendCommandUnderstanding.setContactNames(understanding.getContactNames());
+				reply.setUnderstanding(understanding=sendCommandUnderstanding);
+			} else {
+			  if (!"sms".equalsIgnoreCase(understanding.getAction())) {
+				inactivate();
+				return false;
+			  }
+			  sendCommandUnderstanding=understanding;
+			}
+			if (understanding.isPhoneNumberGiven()) {
+				recipient=understanding.getDescription();
+			} else if (!isEmpty(understanding.getContactNames())) {
+				selectRecepientInBg(reply);
+			}
+			return true;
+		}
+		Utils.runInGuiAndWait(
+		  context, 
+		  new Runnable() {
+			@Override
+			public void run() {
+				VoiceIO.fireOpes();
+			}
+		  }
+		);
+		abortTtsThenShutdown();
+		return false;
+	}
+	
+	@Override
+	public boolean handleReplyInUI(MagReply reply) {
+		Understanding understanding=reply.getUnderstanding(); 
+
+		if (state == YES_NO) {
+			if (understanding.getCommandCode() == Understanding.CMD_YES) {
+				setState(DICTATE_MSG);
+				sendSMS();
+			}
+			else {
+				setState(DICTATE_MSG);
+				silenceCounter = 0;
+				full_text.clear();
+
+				MyTTS.speakText(new MyTTS.WithoutBubbles(App.self.getString(R.string.P_send_all_deleted)+ " " +App.self.getString(R.string.P_send_help_say)));
+				
+				showMessage(null, true);
+				VR.useFreeForm = true;
+				VoiceIO.listenAfterTheSpeech();
+			}
+			return true;
+		}
+		
+		switch (understanding.getCommandCode()) {
+		case Understanding.CMD_DICTATE:
+			return true;
+		case Understanding.CMD_DICTATE_NEW:
+			String a = understanding.getAction();
+			if (Utils.isEmpty(a))
+				a = "unknown";
+			doCommand(a, understanding.getMessage());
+			return true;
+		case Understanding.CMD_SEND:
+
+			if (recipient==null) {
+				MyTTS.speakText(R.string.P_SAY_RECEIVER_NAME);
+				setState(DICTATE_NAME);
+				VoiceIO.listenAfterTheSpeech();
+				return true;
+			}
+
+			startDictation();
+			
+			ICmdHandlerHolder holder=CmdHandlerHolder.getCmdHandlerHolder(context);
+			holder.setCommandHandler(this);
+			
+			return true;
+		default:
+			;
+		}
+		return false;
+	}	
+	
+	private void doCommand(String command, String text) {
+		if (command.equals("dict_delete")) {
+			state = DICTATE_MSG;
+			
+			if (full_text.size() > 0)
+				full_text.remove(full_text.size()-1);
+			if (full_text.size() == 0)
+				MyTTS.speakText(new MyTTS.WithoutBubbles(R.string.P_send_all_deleted));
+			else {
+				String itogo = "";
+				for (String s : full_text)
+					itogo += s + " ";
+				MyTTS.speakText(new MyTTS.WithoutBubbles(App.self.getString(R.string.P_send_part_deleted)+" "+itogo));
+			}
+			showMessage(null, true);
+			VR.useFreeForm = true;
+			VoiceIO.listenAfterTheSpeech();
+			return;
+		}
+		
+		if (command.equals("dict_clear")) {
+			state = DICTATE_MSG;
+			
+			full_text.clear();
+			MyTTS.speakText(new MyTTS.WithoutBubbles(R.string.P_send_all_deleted));
+			showMessage(null, true);
+			VR.useFreeForm = true;
+			VoiceIO.listenAfterTheSpeech();
+			return;
+		}
+		
+		if (command.equals("dict_cancel")) {
+			MyTTS.speakText(R.string.P_send_canceled);
+			inactivate();
+			
+			return;
+		}
+		
+		if (command.equals("dict_send")) {
+			sendSMS();
+			
+			return;
+		}
+		
+		UnderstandingStatus.get().waitingForConfirmation=true;
+	
+		if (!Utils.isEmpty(text)) {
+			if (App.self.isInCarMode() || App.self.getBooleanPref("smsRepeatDictationText"))
+				MyTTS.speakText(new MyTTS.WithoutBubbles(text));
+			full_text.add(text);
+		}
+		
+		if (!App.self.getBooleanPref(CFG_HELP_SAYED)) {
+			MyTTS.speakText(new MyTTS.WithoutBubbles(R.string.P_send_help_say));
+			App.self.setBooleanPref(CFG_HELP_SAYED, true);
+		}
+		VR.useFreeForm = true;
+		VoiceIO.listenAfterTheSpeech();
+
+		showMessage(null, true);
+	}
+	
+	public static void start(Context ctx, String phone, String name) {
+		final MagReply reply = new MagReply();
+		Understanding u = new Understanding(Understanding.CMD_REPLY);
+		reply.setUnderstanding(u);
+	    u.setAction("sms");
+	    u.setNumber(true);
+	    u.setDescription(phone);
+	    
+		Intent it=new Intent(MainActivity.INTERPRET_UNDERSTANDING);
+		it.putExtra(MainActivity.EXTRA_UNDERSTANDING,u);
+		
+		if (MainActivity.isOnTop() || !App.self.shouldUseSuzie()) {
+		   it.setClass(App.self, MainActivity.class);
+			ctx.startActivity(it);
+		}
+		else {
+			SuzieService.showSuzie(null, 0);
+			it.setClass(App.self, SuzieService.class);
+			ctx.startService(it);
+		}
+	}
+	
+	private String recipient=null;
+	private ContactRecord recipientRecord=null;
+	
+	private static final String CFG_HELP_SAYED = "sms_send_help_sayed"; 
+
+	private CalleeSelectionHandler csh=null;
+	
+	/***********************************************************************************************************/
+	private void startDictation() {
+		setState(DICTATE_MSG);
+		silenceCounter = 0;
+		full_text.clear();
+
+		String recip;
+		if (recipientRecord != null)
+			recip = recipientRecord.getName();
+		else
+			recip = Utils.phoneNumberToSpeech(recipient).toString();
+
+		if (sendCommandUnderstanding != null && sendCommandUnderstanding.getMessage() != null) {
+			
+			full_text.add(sendCommandUnderstanding.getMessage());
+
+			if (App.self.isInCarMode() || App.self.getBooleanPref("smsRepeatDictationText") || true) {
+				MyTTS.speakText(new MyTTS.WithoutBubbles(App.self.getString(R.string.P_send_say_message_for_confirm_car_part1) + " " + recip));
+				MyTTS.speakText(new MyTTS.WithoutBubbles(sendCommandUnderstanding.getMessage()));
+				MyTTS.speakText(new MyTTS.WithoutBubbles(App.self.getString(R.string.P_send_say_message_for_confirm_car_part2)));
+			}
+			else {
+				MyTTS.speakText(new MyTTS.WithoutBubbles(App.self.getString(R.string.P_send_say_message_for_confirm)));
+			}
+			
+			setState(YES_NO);
+			/*
+			if (!App.self.getBooleanPref(CFG_HELP_SAYED)) {
+				MyTTS.speakText(new MyTTS.WithoutBubbles(App.self.getString(R.string.P_send_help_say)));
+				App.self.setBooleanPref(CFG_HELP_SAYED, true);
+			}*/
+		}
+		else {
+			MyTTS.speakText(new MyTTS.WithoutBubbles(App.self.getString(R.string.P_send_say_message_for) + " " + recip));
+		}
+		
+		showMessage(null, true);
+		VR.useFreeForm = true;
+		VoiceIO.listenAfterTheSpeech();
+	}
+	
+	/***********************************************************************************************************/
+	private void selectRecepientInBg(MagReply reply) {
+		csh=new CalleeSelectionHandler(context) {
+			
+			@Override
+			public boolean isInSmsMode() {
+			  return true;
+			}
+			
+			@Override
+			protected void giveUp() {
+			  Log.d(TAG, "give up");
+			  super.giveUp();
+			  SendCmdHandler.this.abortTtsThenShutdown();
+			}
+			
+			@Override
+			public boolean clearsCalleeAssociationsManually() {
+				return true;
+			}
+
+			@Override
+			public boolean performFinalAction(ContactRecord r, String cnames[]) {
+				recipientRecord=r;
+				return super.performFinalAction(r,cnames);
+			}
+
+			@Override
+			public boolean performFinalAction(String phoneNumber) {
+				touchLastInteractionTime();
+				recipient=phoneNumber;
+				startDictation();
+				inactivate();
+				return false;
+			}
+
+			@Override
+			public String getPerformByNumberString(String number) {
+                return null; // we does not support this mode here
+			}
+
+			@Override
+			public String getActionName() {
+				return "text";
+			}
+
+			@Override
+			public Pair<Object[], String> getPerformByContactRecordOutput(ContactRecord r, String q) {
+				return null;
+			}
+		};
+		ICmdHandlerHolder holder=CmdHandlerHolder.getCmdHandlerHolder(context);
+		holder.pushCommandHandler(csh);
+	    sendCommandUnderstanding.setCommandByCode(Understanding.CMD_CALL);
+	    csh.handleReplyInBg(reply);		
+	}
+	
+	private Translit translit=Translit.getHebRus();
+	
+	public static Spannable formatMessageBody(String s) {
+	  return Utils.styledString(Utils.firstUpper(s, true),  android.graphics.Typeface.ITALIC);
+	}
+	
+	SmsFeedController fc=null;
+	
+	boolean waitingForNfy=false;
+	
+	private  void sendSMS() {
+		MyTTS.speakText(R.string.P_send_finished);
+		inactivate();
+		fc=SmsFeedController.getInstance();
+		String itogo = "";
+		for (String s : full_text)
+			itogo += s + " ";
+		itogo = Utils.firstUpper(itogo, false).toString();
+		fc.sendSms(recipient, itogo);
+		waitingForNfy=true;
+		VoiceIO.fireOpes();
+	}
+
+
+
+	@Override
+	public void abort(int flags) {
+	   Log.d(TAG, "abort");
+	   MyTTS.speakText(R.string.P_send_canceled);
+	   if (csh != null && recipientRecord != null)
+		   csh.clearCalleeAssociations(recipientRecord);
+	   shutdown();
+	}
+	
+	private void abortTtsThenShutdown() {
+		MyTTS.abort();
+		shutdown();		
+	}
+	
+	//private boolean requires_inactivation=true;
+	
+	private void inactivate() {
+	  Log.d(TAG, "inactivate");
+	  if (true) {
+		//requires_inactivation=false;
+		showMessage(null, false);
+		ICmdHandlerHolder holder=CmdHandlerHolder.getCmdHandlerHolder(context);
+		holder.removeCommandHandler(this);
+		MainActivity m = MainActivity.get();
+		if (m != null)
+			m.bubleQueryEnable(true);
+		
+		SuzieService.messageBubble(null);
+	  }
+	}
+	
+	protected void shutdown() {
+		inactivate();
+		VR.get().killMicrophone();
+	}
+
+	@Override
+	public void onListeningAbortedByBackKeyPressed() {
+		//MyTTS.speakText(new MyTTS.WithoutBubbles(R.string.P_press_the_back_key__textsting));
+	}
+
+	@Override
+	public void onBeforeListening() {
+	   if (state==DICTATE_MSG) {
+		   Log.d(TAG, "onBeforeListening, state==DICTATE_MSG");
+		   VR.useFreeForm=true;
+		   if (sendCommandUnderstanding!=null)
+		      VR.useLanguage=sendCommandUnderstanding.getLanguage();
+	   }
+		
+	}
+
+	@Override
+	public boolean onVoiceInput(List<String> matches, boolean partial) {
+		
+		if (partial) {
+			if (matches == null || matches.size() == 0 || Utils.isEmpty(matches.get(0)))
+				return true;
+			
+			showMessage(matches.get(0), true);
+			
+			return true;
+		}
+		
+    	/*****************************************************************************************/
+    	// waiting for dictation or confirmation...
+		if (state == DICTATE_MSG) {
+			if (matches == null || matches.size() == 0 || Utils.isEmpty(matches.get(0))) {
+				if (silenceCounter++ == 2) {
+					MyTTS.speakText(R.string.P_send_canceled);
+					inactivate();
+					return true;
+				}
+				else {
+					MyTTS.speakText(new MyTTS.WithoutBubbles(R.string.P_send_help_say));
+					App.self.setBooleanPref(CFG_HELP_SAYED, true);
+					VR.useFreeForm = true;
+					VoiceIO.listenAfterTheSpeech();
+					return true;
+				}
+			}
+			
+			if (DO_DICTATION_THROUGH_SERVER)
+				return false;
+			
+			silenceCounter = 0;
+
+			String command = "unknown";
+			if (checkVoiceCommand(matches, R.string.P_send_cmd_delete))
+				command = "dict_delete";
+			else if (checkVoiceCommand(matches, R.string.P_send_cmd_clear))
+				command = "dict_clear";
+			else if (checkVoiceCommand(matches, R.string.P_send_cmd_cancel))
+				command = "dict_cancel";
+			else if (checkVoiceCommand(matches, R.string.P_send_cmd_finish))
+				command = "dict_send";
+			doCommand(command, matches.get(0));
+			
+			return true;
+		}
+
+		if (state == DICTATE_NAME) {
+			if (matches == null || matches.size() == 0 || Utils.isEmpty(matches.get(0)))
+				abort(0);
+		}
+					
+		return false;
+	}
+
+	// show current message to send
+	private void showMessage(String partialText, boolean showHelp) {
+		
+		String recip;
+		if (recipientRecord == null)
+			recip = recipient;
+		else
+			recip = recipientRecord.getName();
+		
+		if (Utils.isEmpty(recip))
+			return;
+		
+		recip = recip.trim();
+		
+		if (Utils.isEmpty(recip))
+			return;
+		
+		MainActivity m = MainActivity.get();
+		if (m != null)
+			m.bubleQueryEnable(false);		
+
+		final SpannableStringBuilder ss = new SpannableStringBuilder("###");
+		ss.append(App.self.getString(R.string.P_send_info));
+		/*
+		if (recipientRecord != null) {
+			recipientRecord.loadIcon(App.self.getResources().getDrawable(R.drawable.ic_contact_picture));
+			ss.append(' ');		
+			ss.setSpan(new ImageSpan(recipientRecord.getIcon()), ss.length()-1, ss.length(), 0);
+		}
+		*/
+		ss.append(' ');
+		ss.append(recip);
+		ss.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), ss.length()-recip.length(), ss.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		if (recipientRecord != null) {
+			ss.append(' ');
+			ss.append(recipientRecord.getPhone());
+		}
+		ss.append(":\n");
+		if (!Utils.isEmpty(full_text)) {
+			String itogo = "";
+			for (int i=0; i<full_text.size(); i++) {
+				if (i == full_text.size()-1 && Utils.isEmpty(partialText) && showHelp) {
+					partialText = full_text.get(i);
+					break;
+				}
+				itogo += full_text.get(i) + " ";
+			}
+			if (!Utils.isEmpty(itogo)) {
+				itogo = Utils.firstUpper(itogo, false).toString();
+				ss.append(itogo);
+				ss.setSpan(new ForegroundColorSpan(android.graphics.Color.argb(255, 0, 0, 150)), ss.length()-itogo.length(), ss.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+			}
+		}
+		if (!Utils.isEmpty(partialText)) {
+			ss.append(partialText);
+			ss.setSpan(new ForegroundColorSpan(android.graphics.Color.argb(255, 0, 0, 150)), ss.length()-partialText.length(), ss.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+			ss.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), ss.length()-partialText.length(), ss.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		}
+		ss.append("\n");
+		
+		if (showHelp) {
+			String help = App.self.getString(R.string.P_send_help_show);
+			ss.append(help);
+			ss.setSpan(new ForegroundColorSpan(android.graphics.Color.GRAY), ss.length()-help.length(), ss.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+			ss.setSpan(new TextAppearanceSpan(context, android.R.style.TextAppearance_Small), ss.length()-help.length(), ss.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		}
+
+		if (m != null)
+			m.bubleAnswer(ss);
+		
+		if (showHelp)
+			SuzieService.messageBubble(ss);		
+	}
+
+	private boolean checkVoiceCommand(List<String> matches, int cmdVarList) {
+		String strVarList = App.self.getString(cmdVarList);
+		if (Utils.isEmpty(strVarList))
+			return false;
+		
+		String[] arrVarList = strVarList.toLowerCase().split("/");
+		
+		for (String s : matches) {
+			if (Utils.isEmpty(s))
+				continue;
+			
+			for (String s2 : arrVarList) {
+				if (!Utils.isEmpty(s2) && s.toLowerCase().equals(s2))
+					return true;
+			}
+		}
+		return false;
+	}
+}

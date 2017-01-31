@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="sms_alerts">Уведомления о СМС</string>
+	<string name="call_alerts">Уведомления о звонках</string>
+	<string name="bluetooth_support">Поддержка Блютуз (бета)</string>
+	<string name="sms">СМС ...</string>
+	<string name="voice_notifications">Голосовые уведомления</string>
+	<string name="read_msg">Читать текст сообщения</string>
+	<string name="announce_sender">Произносить отправителя</string>
+	<string name="repeat_text">Повторять текст при диктовке</string>
+	<string name="suzie_auto_hide">Скрывать плавающую кнопку</string>
+	<string name="prompt_to_read">Спрашивать о прочтении</string>
+	<string name="prompt_to_reply">Спрашивать об ответе</string>
+	<string name="gmail_password">Пароль Gmail</string>
+	<string name="yahoo_password">Пароль Yahoo</string>
+	<string name="exclude_signature">Исключить подпись Робин</string>
+	<string name="email_social">Смс / Email / Социальное ...</string>
+	<string name="mail_provider">Провайдер почты</string>
+	<string name="gmail_account">Gmail</string>
+	<string name="yahoo_mail">Yahoo mail</string>
+	<string name="username">Пользователь</string>
+	<string name="reset_twitter">Сбросить настройки Твиттера</string>
+	<string name="reset_facebook">Сбросить настройки Фейсбука</string>
+	<string name="activation">Активация ...</string>
+	<string name="status_bar_icon">Меню в статус баре</string>			
+	<string name="floating_button">Плавающая кнопка</string>
+	<string name="keep_screen_awake">Не гасить экран</string>
+	<string name="handwaving">Активировать маханием</string>
+    <string name="voiceactivationgroup">Актививация голосом ...</string>
+    <string name="voiceactivation">Активировать голосом</string>
+    <string name="voiceactivationoncharging">Только если подключен к зарядке</string>
+	<string name="bell_off">Отключить звонок микрофона</string>
+	<string name="help_hints">Произносить подсказки</string>
+	<string name="greet_me">Приветствовать при запуске</string>
+	<string name="personal_info">Персональные данные ...</string>
+    <string name="car_mode_options_title">В автомобиле ...</string>
+    <string name="car_mode_auto">Определять автоматически</string>
+    <string name="car_mode_speaker">Включать динамик</string>
+    <string name="car_mode_bt">Включать bluetooth</string>
+    <string name="car_mode_digest">Читать задачи дня</string>
+    <string name="car_mode_big_button">Увеличить кнопку</string>
+    <string name="car_mode_debug">Отладочная информация</string>
+	<string name="your_name">Твоё имя</string>
+	<string name="home_address">Домашний адрес</string>
+	<string name="work_address">Рабочий адрес</string>
+	<string name="birthday">День рождение</string>
+	<string name="preferences">Предпочтения ...</string>
+	<string name="spell_phone_numbers">Произносить телефонные номера</string>
+	<string name="fuel_type">Тип бензина</string>
+	<string name="navigator_type">Программа навигации</string>
+	<string name="map_view">Тип карты</string>
+	<string name="metric_system">Метрическая система</string>
+	<string name="temperature_in">Температура в \u00B0</string>
+	<string name="reset_default_choices">Обнулить настройки</string>
+	<string name="qa_testing">QA тестирование</string>
+	<string name="voices">Голоса и Языки ...</string>
+	<string name="download_male_voice">Сгрузить мужской голос (English)</string>
+	<string name="download_female_voice">Сгрузить женский голос (English)</string>
+	<string name="download_russian_voice">Сгрузить русский голос</string>
+	<string name="select_voice">Выбрать голос</string>
+	<string name="language">Язык</string>
+	<string name="privacy">Правила конфиденциальности</string>
+
+    <string-array name="voiceactivation">
+        <item>Выключен</item>
+        <item>По словам "Эй Робин"</item>
+        <item>По слову "Робин"</item>
+    </string-array>
+
+    <string-array name="voiceactivationValues">
+        <item>off</item>
+        <item>on</item>
+        <item>sensitive</item>
+    </string-array>
+
+    <string-array name="fuelTypePhrase">
+		<item>Обычный</item>
+		<item>Улучшенный</item>
+		<item>Премиальный</item>
+		<item>Дизель</item>
+	</string-array>
+	
+	<string-array name="navigatorTypePhrase">
+		<item>Гугл и совместимые</item>
+		<item>Waze</item>
+		<item>Другие</item>
+		<!--  <item>Telenav</item> -->
+	</string-array>
+	
+	<string-array name="temperatureTypePhrase">
+	    <item>Автоматически</item>
+	    <item>Цельсии\u00B0</item>
+	    <item>Фаренгейты\u00B0</item>
+	</string-array>
+	
+	<string name="MStandartName">Стандартная</string>
+	<string name="MSatelliteName">Спутниковая</string>
+	<string name="VSystemName">Системный</string>
+	<string name="VFemaleName">Женский</string>
+	<string name="VMaleName">Мужской</string>
+				
+</resources>

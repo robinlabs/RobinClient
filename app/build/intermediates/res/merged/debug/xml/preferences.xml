@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="openKeyboard"
+        android:title="@string/P_type_option">
+        <intent
+            android:action="com.magnifis.parking.TYPE"
+            android:targetPackage="com.magnifis.parking"
+            android:targetClass="com.magnifis.parking.MainActivity"
+            />
+    </Preference>
+    <Preference
+        android:key="shareRobin"
+        android:title="@string/P_share_option">
+        <intent
+            android:action="com.magnifis.parking.SHARE"
+            android:targetPackage="com.magnifis.parking"
+            android:targetClass="com.magnifis.parking.MainActivity"
+            />
+    </Preference>
+    <!--
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="SMSnotify"
+        android:persistent="true"
+        android:title="@string/sms_alerts" />
+        -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="speakCallerName2"
+        android:persistent="true"
+        android:title="@string/call_alerts" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="daily_news_update"
+        android:persistent="true"
+        android:title="@string/daily_news_update" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="floatingButton"
+        android:persistent="true"
+        android:title="@string/floating_button" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="handwaving"
+        android:persistent="true"
+        android:title="@string/handwaving" />
+
+    <PreferenceScreen
+        android:key="voiceactivationscreen"
+        android:title="@string/voiceactivationgroup" >
+        <ListPreference
+            android:defaultValue="off"
+            android:entries="@array/voiceactivation"
+            android:entryValues="@array/voiceactivationValues"
+            android:key="voiceactivation"
+            android:persistent="true"
+            android:title="@string/voiceactivation" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="voiceactivationoncharging"
+            android:persistent="true"
+            android:title="@string/voiceactivationoncharging" />
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="messages"
+        android:title="@string/email_social">
+         
+       <!-- Some of Sms options are not shown any more. Defined in Config.java file -->
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="SMSnotify"
+            android:persistent="true"
+            android:title="@string/sms_alerts" />
+
+        <CheckBoxPreference android:key="smsReadInstantly2"
+            android:persistent="true" 
+            android:title="@string/read_msg" 
+            android:defaultValue="true"/>
+        
+        <CheckBoxPreference android:key="smsRepeatDictationText"
+            android:persistent="true" 
+            android:title="@string/repeat_text" 
+            android:defaultValue="true"/>
+        
+        <CheckBoxPreference android:key="smsExcludeSignature"
+            android:persistent="true" 
+            android:title="@string/exclude_signature" 
+            android:defaultValue="true"/>
+ 
+        <com.magnifis.parking.pref.IntListPreference
+            android:defaultValue="@integer/MtGmail"
+            android:entries="@array/mailTypePhrase"
+            android:entryValues="@array/mailType"
+            android:key="@string/PfMailType"
+            android:persistent="true"
+            android:title="@string/mail_provider" />
+
+        <ListPreference
+            android:key="@string/PfGmailAccount"
+            android:persistent="true"
+            android:shouldDisableView="true"
+            android:title="@string/gmail_account" />
+        <ListPreference
+            android:defaultValue="yahoo.com"
+            android:entries="@array/PfYahooDomain"
+            android:entryValues="@array/PfYahooDomain"
+            android:key="@string/PfYahooDomain"
+            android:persistent="true"
+            android:shouldDisableView="true"
+            android:title="@string/yahoo_mail" />
+
+        <EditTextPreference
+            android:key="@string/PfYahooMailBox"
+            android:persistent="true"
+            android:shouldDisableView="true"
+            android:title="@string/username" />
+
+        <com.magnifis.parking.pref.PasswordPreference
+            android:inputType="textPassword"
+            android:key="gmailPassword"
+            android:shouldDisableView="true"
+            android:title="@string/gmail_password" />
+        <com.magnifis.parking.pref.PasswordPreference
+            android:inputType="textPassword"
+            android:key="yahooPassword"
+            android:shouldDisableView="true"
+            android:title="@string/yahoo_password" />
+
+        <Preference
+            android:key="@string/PfResetTwitter"
+            android:title="@string/reset_twitter" />
+        <Preference
+            android:key="@string/PfResetFacebook"
+            android:title="@string/reset_facebook" />
+        
+        <Preference
+            android:key="@string/PfResetActions"
+            android:title="@string/reset_default_choices"/> 
+            
+        <CheckBoxPreference
+	        android:defaultValue="false"
+        	android:key="qaTesting"
+        	android:persistent="true"
+        	android:title="@string/qa_testing" />
+        
+    </PreferenceScreen>
+    
+        <!--  
+    <PreferenceScreen
+        android:key="handwaving_options"
+        android:title="@string/handwaving_screen_title" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="handwaving_ma"
+            android:persistent="true"
+            android:title="@string/handwaving_ma" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="handwaving_fl"
+            android:persistent="true"
+            android:title="@string/handwaving_fl" />
+         <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="handwaving_ap"
+            android:persistent="true"
+            android:title="@string/handwaving_ap" />
+    </PreferenceScreen>
+    -->
+    
+    
+    <PreferenceScreen
+        android:key="activation_options"
+        android:title="@string/activation" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="keepScreenAwake"
+            android:persistent="true"
+            android:title="@string/keep_screen_awake" />
+        
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="InputReadySoundOff"
+            android:persistent="true"
+            android:title="@string/bell_off" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="hint"
+            android:persistent="true"
+            android:title="@string/help_hints" />
+
+        <com.magnifis.parking.pref.InvertedCheckBoxPreference
+            android:defaultValue="false"
+            android:key="greetingOff"
+            android:persistent="true"
+            android:title="@string/greet_me" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="bluetoothSupport"
+            android:persistent="true"
+            android:title="@string/bluetooth_support" />
+        <!--
+        <CheckBoxPreference android:key="autoHideSuzie" 
+            android:persistent="true" 
+            android:title="@string/suzie_auto_hide" 
+            android:defaultValue="true"/>
+            -->
+        
+        </PreferenceScreen>
+    
+    <PreferenceScreen
+        android:key="user_profile"
+        android:title="@string/personal_info" >
+        <com.magnifis.parking.pref.LearnAttributePreference
+            android:key="learn:macro:username"
+            android:persistent="true"
+            android:title="@string/your_name" />
+        <com.magnifis.parking.pref.LearnAttributePreference
+            android:key="learn:home"
+            android:persistent="true"
+            android:title="@string/home_address" />
+        <com.magnifis.parking.pref.LearnAttributePreference
+            android:key="learn:work"
+            android:persistent="true"
+            android:title="@string/work_address" />
+        <com.magnifis.parking.pref.LearnAttributePreference
+            android:key="@string/PfBirthday"
+            android:persistent="true"
+            android:title="@string/birthday" />
+    </PreferenceScreen>
+
+    <!--
+    <PreferenceScreen
+        android:key="car_mode_options"
+        android:title="@string/car_mode_options_title" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="car_mode_option_auto"
+            android:persistent="true"
+            android:title="@string/car_mode_auto" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="car_mode_option_speaker"
+            android:persistent="true"
+            android:title="@string/car_mode_speaker" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="car_mode_option_bt"
+            android:persistent="true"
+            android:title="@string/car_mode_bt" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="car_mode_option_digest"
+            android:persistent="true"
+            android:title="@string/car_mode_digest" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="car_mode_option_big_button"
+            android:persistent="true"
+            android:title="@string/car_mode_big_button" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="car_mode_option_debug"
+            android:persistent="true"
+            android:title="@string/car_mode_debug" />
+    </PreferenceScreen>
+
+-->
+
+    <PreferenceScreen
+        android:key="driving_options"
+        android:title="@string/preferences" >
+
+        <!--
+        <CheckBoxPreference
+            android:key="spellUnknownPhones"
+            android:title="@string/spell_phone_numbers"
+            android:persistent="true"
+            android:defaultValue="false"
+        />
+
+        -->
+
+        <ListPreference
+            android:defaultValue="@string/FtRegular"
+            android:entries="@array/fuelTypePhrase"
+            android:entryValues="@array/fuelType"
+            android:key="@string/PfFuelType"
+            android:persistent="true"
+            android:title="@string/fuel_type" />
+        <ListPreference
+            android:defaultValue="@string/NtGoogle"
+            android:entries="@array/navigatorTypePhrase"
+            android:entryValues="@array/navigatorType"
+            android:key="@string/PfNavigatorType"
+            android:persistent="true"
+            android:title="@string/navigator_type" />
+        <ListPreference
+            android:defaultValue="@string/MStandart"
+            android:entries="@array/mapTypePhrase"
+            android:entryValues="@array/mapType"
+            android:key="@string/PfMapType"
+            android:persistent="true"
+            android:title="@string/map_view" />
+
+        <!--
+        http://en.wikipedia.org/wiki/Imperial_units#Current_use_of_imperial_units
+        http://en.wikipedia.org/wiki/United_States_customary_units
+
+        -->
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="meters"
+            android:persistent="true"
+            android:title="@string/metric_system" />
+
+        <!--
+         Fahrenheit is used in the United States, Belize, Palau and
+         the United States territories of Puerto Rico,
+          Guam and the U.S. Virgin Islands
+        -->
+        <!--
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="celsius"
+            android:persistent="true"
+            android:title="Temperature in Celsius\u00B0" />
+
+        -->
+
+        <ListPreference
+            android:defaultValue="a"
+            android:entries="@array/temperatureTypePhrase"
+            android:entryValues="@array/temperatureType"
+            android:key="temperatureSystem"
+            android:persistent="true"
+            android:title="@string/temperature_in" />
+
+        <!-- It's absolutely disallowed to remove PfResetActions option!!! -->
+        <Preference
+            android:key="@string/PfResetActions"
+            android:title="@string/reset_default_choices" />
+    </PreferenceScreen>
+    
+    <PreferenceScreen
+        android:key="voices_options"
+        android:title="@string/voices" >
+        <Preference
+            android:key="download_female_voice"
+            android:title="@string/download_female_voice" />
+        
+        <Preference
+            android:key="download_male_voice"
+            android:title="@string/download_male_voice" />
+        
+        <Preference
+            android:key="download_russian_voice"
+            android:title="@string/download_russian_voice" />
+
+        <ListPreference
+            android:defaultValue="@string/VFemale"
+            android:entries="@array/voiceTypePhrase"
+            android:entryValues="@array/voiceType"
+            android:key="@string/PfVoiceType"
+            android:persistent="true"
+            android:title="@string/select_voice" />
+        <ListPreference
+            android:defaultValue="en"
+            android:entries="@array/langType"
+            android:entryValues="@array/langTypeValues"
+            android:key="lang"
+            android:persistent="true"
+            android:title="@string/language" />
+    </PreferenceScreen>
+
+    <Preference
+        android:key="privacyPolicy"
+        android:title="@string/privacy" />
+
+</PreferenceScreen>

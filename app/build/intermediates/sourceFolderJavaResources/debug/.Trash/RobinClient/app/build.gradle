@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.magnifis.parking"
+        minSdkVersion 16
+        targetSdkVersion 25
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:25.1.0'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile files('libs/ATTSpeechKit.jar')
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/android-support-v7-recyclerview.jar')
+    compile files('libs/boilerpipe-1.2.0-android.jar')
+    compile files('libs/commons-lang-2.5.jar')
+    compile files('libs/google-play-services.jar')
+    compile files('libs/jsoup-1.6.3.jar')
+    compile files('libs/libGoogleAnalyticsServices.jar')
+    compile files('libs/libphonenumber-5.4.jar')
+    compile files('libs/mail.jar')
+    compile files('libs/oauth-20090825.jar')
+    compile files('libs/pocketsphinx-android-0.8-nolib.jar')
+    compile files('libs/twitter4j-async-3.0.5.jar')
+    compile files('libs/twitter4j-core-3.0.5.jar')
+    compile files('libs/twitter4j-media-support-3.0.5.jar')
+    compile files('libs/twitter4j-stream-3.0.5.jar')
+}

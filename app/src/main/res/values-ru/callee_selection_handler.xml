@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="callee_selection_cl_or">или</string>
+   <string name="callee_selection_cl_one"></string>
+   <string-array name="callee_selection_cl_ordinals">
+        <item>первый</item>
+        <item>второй</item>
+        <item>третий</item>
+        <item>четвертый</item>
+        <item>пятый</item>
+        <item>шестой</item>
+        <item>седьмой</item>
+  </string-array>
+</resources>

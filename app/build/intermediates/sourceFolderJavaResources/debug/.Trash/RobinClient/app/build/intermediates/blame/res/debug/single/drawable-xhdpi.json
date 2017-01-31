@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/orange_centra_button_not_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/orange_centra_button_not_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/centra_button_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/centra_button_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/com_facebook_loginbutton_blue_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/com_facebook_loginbutton_blue_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/com_facebook_logo.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/com_facebook_logo.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/com_facebook_loginbutton_blue_normal.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/com_facebook_loginbutton_blue_normal.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/centra_button_not_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/centra_button_not_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/sbicon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/sbicon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/powered_by_google_on_white.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/powered_by_google_on_white.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/com_facebook_button_grey_normal.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/com_facebook_loginbutton_blue_focused.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/com_facebook_loginbutton_blue_focused.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/com_facebook_close.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/com_facebook_close.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/com_facebook_button_grey_pressed.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi/com_facebook_button_grey_focused.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/com_facebook_button_grey_focused.9.png"
+    }
+]

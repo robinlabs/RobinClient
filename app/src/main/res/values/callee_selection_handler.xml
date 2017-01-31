@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="callee_selection_cl_or">or</string>
+   <string name="callee_selection_cl_one">one</string>
+   <string-array name="callee_selection_cl_ordinals">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>fifth</item>
+        <item>sixth</item>
+        <item>seventh</item>
+  </string-array>
+</resources>

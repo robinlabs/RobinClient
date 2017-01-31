@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_width="300dp"
+    android:layout_height="60dp" 
+    android:background="@android:color/black"
+    >
+    
+    <include  layout="@layout/notification_bar_menu_buttons"/>
+  
+<!--  
+    <LinearLayout
+        android:id="@+id/tray_help_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+         android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/tray_help"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/tray_help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12dp" />
+    </LinearLayout>
+ --> 
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<com.magnifis.parking.views.ScalableShort
+        android:layout_width="98px"
+        android:layout_height="69px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14px"
+        android:layout_marginTop="90px"
+        android:background="@drawable/green_details"
+        android:id="@+id/ParkingLoadEnv"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+        <TextView
+            android:id="@+id/ParkingLoadText"
+            android:text="65%" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="31px" 
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="23px"
+            />
+</com.magnifis.parking.views.ScalableShort>

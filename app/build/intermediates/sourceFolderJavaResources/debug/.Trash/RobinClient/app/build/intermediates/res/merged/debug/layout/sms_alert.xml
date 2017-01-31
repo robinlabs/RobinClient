@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.magnifis.parking.views.SmsAlertView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="440px"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#d8000000"
+    android:orientation="vertical" >
+
+    <com.magnifis.parking.views.ScalableLLShort
+        android:id="@+id/upperPart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <com.magnifis.parking.views.ScalableShort
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+       >
+            <com.magnifis.parking.views.ScalableShort
+                android:id="@+id/closeButtonEnv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="5px" 
+                android:paddingLeft="20px"
+                >
+
+                <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/x" />
+
+                <View
+                    android:id="@+id/user"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:background="@drawable/touchable"
+                    android:clickable="true" />
+            </com.magnifis.parking.views.ScalableShort>
+
+            <com.magnifis.parking.views.NoneScalableTextView
+                android:id="@+id/textSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/closeButtonEnv"
+                android:gravity="left"
+                android:paddingBottom="8px"
+                android:paddingTop="8px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px" 
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+        </com.magnifis.parking.views.ScalableShort>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#cdd1d3" />
+
+        <com.magnifis.parking.views.NoneScalableTextView
+            android:id="@+id/textBody"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="10px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="10px"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+        <!-- android:textColor="#444444" / -->
+
+    </com.magnifis.parking.views.ScalableLLShort>
+
+    <com.magnifis.parking.views.ScalableLLShort
+        android:layout_width="fill_parent"
+        android:layout_height="55px"
+        android:orientation="horizontal"
+    android:id="@+id/buttonBox">
+
+        <com.magnifis.parking.views.ScalableShort
+            android:id="@+id/listenButtonEnv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#2d7cda"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/black" >
+
+            <ImageView
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/recognition_2x" />
+
+            <View
+                android:id="@+id/listenButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/touchable"
+                android:clickable="true" />
+        </com.magnifis.parking.views.ScalableShort>
+
+        <com.magnifis.parking.views.ScalableShort
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#65e203"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/black" >
+
+            <ImageView
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/reply_2x" />
+
+            <View
+                android:id="@+id/replyButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/touchable"
+                android:clickable="true" />
+        </com.magnifis.parking.views.ScalableShort>
+    </com.magnifis.parking.views.ScalableLLShort>
+
+    <com.magnifis.parking.views.ScalableShort
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="2px" >
+
+        <CheckBox
+            android:id="@+id/voiceModeCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <com.magnifis.parking.views.NoneScalableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/voiceModeCheckbox"
+            android:gravity="left"
+            android:text="Voice notifications on"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+    </com.magnifis.parking.views.ScalableShort>
+
+</com.magnifis.parking.views.SmsAlertView>

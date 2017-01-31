@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<intro>
+    <page img="slide_01.png">
+        Hello I am Robin, your personal assistant on the go. Swipe left and I'll tell you more!
+    </page>
+    <page img="slide_02.png">
+       I can give you directions and traffic alerts, help find nearby food spots and gas stations. 
+    </page>
+   <page img="slide_03.png">
+        You can also text by voice anytime. I can be on stand-by whenever your are driving, ready to be invoked from your notification drawer.   
+    </page>
+    <page img="slide_04.png">
+       You will also get an option to activate me, as soon as I can sense you're driving. 
+    </page>
+    <page img="slide_05.png">
+        To exit, just press the back button, and I'll see you next time!
+    </page>  -->
+</intro>

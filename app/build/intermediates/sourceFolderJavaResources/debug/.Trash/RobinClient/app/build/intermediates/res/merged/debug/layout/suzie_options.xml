@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.magnifis.parking.views.ScalableShort xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suzie"
+    android:layout_width="64px"
+    android:layout_height="64px">
+
+        <View
+            android:id="@+id/optionTeach"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:clickable="true"
+            android:background="@drawable/option_teach" />        
+
+        <View
+            android:id="@+id/optionOpenRobin"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:clickable="true"
+            android:background="@drawable/option_open_robin" />        
+
+        <View
+            android:id="@+id/optionOpenMap"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:clickable="true"
+            android:background="@drawable/option_open_map" />        
+
+        <View
+            android:id="@+id/optionCloseButton"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:clickable="true"
+            android:background="@drawable/option_close" />        
+
+</com.magnifis.parking.views.ScalableShort>

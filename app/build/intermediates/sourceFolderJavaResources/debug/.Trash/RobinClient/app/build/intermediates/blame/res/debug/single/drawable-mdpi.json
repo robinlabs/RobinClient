@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-mdpi/sbicon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-mdpi/sbicon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-mdpi/details_window_landscape.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-mdpi/details_window_landscape.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-mdpi/powered_by_google_on_white.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-mdpi/powered_by_google_on_white.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-mdpi/orange_centra_button_not_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-mdpi/orange_centra_button_not_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-mdpi/centra_button_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-mdpi/centra_button_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-mdpi/details_window.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-mdpi/details_window.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-mdpi/centra_button_not_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-mdpi/centra_button_not_pressed.png"
+    }
+]

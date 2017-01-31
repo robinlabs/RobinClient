@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="PT_MOBILE">mobile</string>
+   <string name="PT_WORK_MOBILE">work mobile</string>
+   <string name="PT_WORK">work</string>
+   <string name="PT_HOME">home</string>    
+</resources>

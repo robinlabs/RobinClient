@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="help_url">http://www.magnifis.com/wpress/content/products/robin/Help/Help-1-10.html</string>
+<string name="teaching_url">http://173.255.249.124/android.php?</string>
+
+
+ <string name="share_robin_subj">Робин - твой персональный помощник за рулем!</string>
+ <string name="share_robin_url">http://bit.ly/QNByLs</string>
+
+ <string name="publisher_public_key_base64">
+  MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxzBU1wJg0q4+4jHt3cuFg/+UlUVug3RTXqLOshXQecaOzZ13uy/MUfolaP2W+cVBw7lEMe3FlRJccRRqxitr/921zjrXsdnl//d9M/vz3IQ3CNrpUeQohVTFZWeKgGsrGjP1E6aZyb7rkC+75/9uQ56m4vQtD3yPXBiw8d675jASJ3SPBkXK7FhAMfaip7NIqV7NquJmlQDP/Vo+h3K85XcPsFbVaUX+7CeYQM4kQzAxUQBYRafIR0EQoTpGcPFou6IG6f+HzZd77m16kPNAlQ5TbQUqQht/bmIkE/no0veLD6RN2nvWs/1syap+FryHjAyvallEHJV8MWknpniDfwIDAQAB
+ </string>
+ <string name="adv_for_mail">\n\n------\nПослано через Робин, мой персональный ассистент http://bit.ly/Vpmaem.</string>
+ <string name="adv_for_sms">(via Robin http://bit.ly/PeeTwl)</string>
+ 
+ </resources>

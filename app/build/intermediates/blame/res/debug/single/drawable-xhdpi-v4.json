@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/bg.jpg",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/bg.jpg"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/bg_land.jpg",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-xhdpi/bg_land.jpg"
+    }
+]

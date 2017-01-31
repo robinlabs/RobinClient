@@ -1,0 +1,8 @@
+#Equinox secure storage version 1.0
+#Tue Jan 24 17:32:48 PST 2017
+org.eclipse.equinox.security.preferences.version=1
+org.eclipse.equinox.security.preferences.cipher=PBEWithMD5AndDES
+/GIT/https\:\\2f\\2fgithub.com\:443/user=\t,dmxhZGdldHM\=
+/GIT/https\:\\2f\\2fgithub.com\:443/password=org.eclipse.equinox.security.osxkeystoreintegration\t4JBMOThW0ds\=,ydKnL8boDaNOAEN4xsJZLA\=\=
+org.eclipse.equinox.security.preferences.keyFactory=PBEWithMD5AndDES
+/org.eclipse.equinox.secure.storage/verification/org.eclipse.equinox.security.osxkeystoreintegration=org.eclipse.equinox.security.osxkeystoreintegration\tColVik/ziz0\=,mSj0wnuBww+lsEUEA2sHfDzY69e9Ufds

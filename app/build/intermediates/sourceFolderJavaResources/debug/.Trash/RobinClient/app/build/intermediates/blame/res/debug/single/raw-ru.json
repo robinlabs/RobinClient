@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/raw-ru/intro.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/raw-ru/intro.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/raw-ru/help.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/raw-ru/help.xml"
+    }
+]

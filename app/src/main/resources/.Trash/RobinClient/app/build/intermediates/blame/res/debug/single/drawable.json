@@ -1,0 +1,822 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/joke_area_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/joke_area_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/joke_area.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/joke_area.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/call_button_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/call_button_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_profile_picture_blank_square.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_profile_picture_blank_square.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/toggles_preview.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/toggles_preview.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_picker_list_selector_background_transition.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_picker_list_selector_background_transition.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_middle_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_middle_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0006.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0006.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/placemark_red.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/placemark_red.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/button_free.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/button_free.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_middle_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_middle_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_0.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_0.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/button_active.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/button_active.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_top_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_top_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_list_section_header_background.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_list_section_header_background.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0018.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0018.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/option_open_robin.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/option_open_robin.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble_bg.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble_bg.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0004.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0004.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/toast_border.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/toast_border.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/touchable.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/touchable.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_transparent.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_transparent.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_picker_list_pressed.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_picker_list_pressed.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_bottom_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_bottom_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_loginbutton_silver.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_loginbutton_silver.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/button_hidden_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/button_hidden_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/bubble_answer_bg.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/bubble_answer_bg.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/main_bg.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/main_bg.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/map_marker_greendot.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/map_marker_greendot.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/ic_contact_picture.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/ic_contact_picture.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0013.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0013.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_check.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_button_check.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_2.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_2.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/navigate_button_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/navigate_button_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0016.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0016.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_right2.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_right2.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0000.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0000.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_usersettingsfragment_background_gradient.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/microphone_button_ss.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/microphone_button_ss.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/orange_details.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/orange_details.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_middle_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_middle_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/talk_circle_active.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/talk_circle_active.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/red_details.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/red_details.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/bg_800x480.jpg",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/bg_800x480.jpg"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0014.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0014.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/logo_icon_blue.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/logo_icon_blue.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/sms_send_none.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/sms_send_none.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/call_button.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/call_button.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0015.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0015.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/short_details_popup_orange.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/short_details_popup_orange.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/widget_w_joke_bg.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/widget_w_joke_bg.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_left3.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_left3.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/weather_win.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/weather_win.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/orange_map_icon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/orange_map_icon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/sms_keyboard2.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/sms_keyboard2.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_4.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_4.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/button_free_fail.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/button_free_fail.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/logo_icon.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/logo_icon.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/sbicon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/sbicon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_loginbutton_blue.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_loginbutton_blue.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/red_map_icon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/red_map_icon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_grey_pressed.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_button_grey_pressed.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_logo.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_logo.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/circle_back.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/circle_back.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_list_divider.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_list_divider.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/details_window.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/details_window.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_top_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_top_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_right3.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_right3.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_top_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_top_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0005.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0005.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_check_off.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_button_check_off.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/end_call_icon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/end_call_icon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/short_details_popup_green.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/short_details_popup_green.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_bottom_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_bottom_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/navigate_button.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/navigate_button.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_top_arrow.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_top_arrow.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_2_half.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_2_half.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/green_details.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/green_details.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_1.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_1.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/button_hidden_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/button_hidden_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/short_details_popup.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/short_details_popup.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/toast_answer_border.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/toast_answer_border.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_bottom_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_bottom_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/option_teach.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/option_teach.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/green_map_icon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/green_map_icon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_picker_list_selector.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_picker_list_selector.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_top_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_top_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_middle_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_middle_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/bubble_query_bg.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/bubble_query_bg.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/call_button_ss.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/call_button_ss.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/sms_keyboard.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/sms_keyboard.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/recognition_2x.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/recognition_2x.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_3_half.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_3_half.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0007.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0007.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_3.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_3.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/yelp_logo_100x50.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/yelp_logo_100x50.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_top_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_top_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_picker_top_button.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_picker_top_button.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0020.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0020.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/reply_2x.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/reply_2x.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/x.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/x.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_bottom_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_bottom_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0003.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0003.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_middle_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_middle_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_4_half.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_4_half.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/option_close.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/option_close.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/bg_480x800.jpg",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/bg_480x800.jpg"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0009.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0009.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/default_poi_image.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/default_poi_image.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_top_background.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_top_background.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_top_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_top_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/short_details_popup_red.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/short_details_popup_red.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_1_half.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_1_half.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_check_on.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_button_check_on.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0010.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0010.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_profile_default_icon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_profile_default_icon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_picker_list_selector_disabled.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_picker_list_selector_disabled.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/stars_5.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/stars_5.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/option_open_map.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/option_open_map.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_middle_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_middle_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0019.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0019.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_top_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_top_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_grey_normal.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_button_grey_normal.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/widget_preview.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/widget_preview.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_grey_focused.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_button_grey_focused.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/logo_icon_red2.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/logo_icon_red2.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_top_button.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_top_button.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/gas_icon_small.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/gas_icon_small.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/ic_menu_share.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/ic_menu_share.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_bottom_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_bottom_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_left2.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_left2.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_top_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_top_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_fill2.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_fill2.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_loginbutton_blue_normal.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_loginbutton_blue_normal.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mic_button.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mic_button.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/ic_menu_compose.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/ic_menu_compose.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/logo_icon_red1.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/logo_icon_red1.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_picker_list_focused.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_picker_list_focused.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/empty_help_icon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/empty_help_icon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_right1.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_right1.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0012.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0012.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0001.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0001.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_place_default_icon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_place_default_icon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/details_window_landscape.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/details_window_landscape.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_profile_picture_blank_portrait.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_profile_picture_blank_portrait.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0017.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0017.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0011.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0011.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_middle_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_middle_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/joke_area_ss.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/joke_area_ss.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_middle_right.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_middle_right.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_left1.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_left1.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_close.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_close.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_loginbutton_blue_focused.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_loginbutton_blue_focused.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/ic_kbd.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/ic_kbd.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/map_marker_red.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/map_marker_red.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_top_left.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_top_left.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_picker_list_longpressed.9.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_picker_list_longpressed.9.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0002.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0002.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/mcanim_0008.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/mcanim_0008.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/messagebubble_bottom_fill1.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/messagebubble_bottom_fill1.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble3_middle_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble3_middle_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/com_facebook_loginbutton_blue_pressed.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/com_facebook_loginbutton_blue_pressed.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/navigate_button_ss.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/navigate_button_ss.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/chatbubble4_bottom_fill.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/chatbubble4_bottom_fill.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable/teach_robin_grey.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable/teach_robin_grey.png"
+    }
+]

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="PfFuelType">fuelType</string>
+	<string name="PfResetTwitter">resetTwitter</string>
+	<string name="PfResetFacebook">resetFacebook</string>
+	<string name="PfResetActions">resetActions</string>
+	<string name="FtRegular">regular</string>
+	<string name="FtPlus">plus</string>
+	<string name="FtPremium">premium</string>
+	<string name="FtDiesel">diesel</string>
+	<string-array name="fuelType">
+		<item>@string/FtRegular</item>
+		<item>@string/FtPlus</item>
+		<item>@string/FtPremium</item>
+		<item>@string/FtDiesel</item>
+	</string-array>
+	
+	<string name="PfNavigatorType">navigatorType</string>
+	<string name="NtGoogle">google</string>
+	<string name="NtNavigon">navigon</string>
+	<string name="NtTelenav">telenav</string>
+	<string name="NtWaze">waze</string>
+	<string name="NtOther">other</string>
+	
+	<string-array name="navigatorType">
+		<item>@string/NtGoogle</item>
+		<item>@string/NtWaze</item>
+		<item>@string/NtOther</item>
+		<!--  
+		<item>@string/NtTelenav</item>
+		-->
+	</string-array>
+
+	
+	<string name="PfVoiceType">voiceType</string>
+	<string name="VSystem">-1</string>
+	<string name="VFemale">0</string>
+	<string name="VMale">1</string>
+	
+	<string-array name="voiceType">
+	    <item>@string/VFemale</item>
+	   	<item>@string/VMale</item>
+		<item>@string/VSystem</item>
+	</string-array>
+
+	<string-array name="voiceTypeNomale">
+	    <item>@string/VFemale</item>
+		<item>@string/VSystem</item>
+	</string-array>	
+	
+	<string-array name="voiceTypePhrase">
+		<item>@string/VFemaleName</item>
+		<item>@string/VMaleName</item>
+		<item>@string/VSystemName</item>
+	</string-array>
+	
+	<string-array name="voiceTypePhraseNomale">
+		<item>@string/VFemaleName</item>
+		<item>@string/VSystemName</item>
+	</string-array>
+
+    <string-array name="voiceactivation">
+        <item>Off</item>
+        <item>By saying \"OK Robin\"</item>
+        <item>By saying \"Robin\"</item>
+    </string-array>
+
+    <string-array name="voiceactivationValues">
+        <item>off</item>
+        <item>on</item>
+        <item>sensitive</item>
+    </string-array>
+
+    <string-array name="langType">
+		<item>English</item>
+	    <item>Русский</item>
+	</string-array>
+				
+	<string-array name="langTypeValues">
+		<item>en</item>
+		<item>ru</item>
+	</string-array>
+				
+	<string name="PfMapType">mapType</string>
+	<string name="MStandart">0</string>
+	<string name="MSatellite">1</string>
+	<string-array name="mapType">
+		<item>@string/MStandart</item>
+		<item>@string/MSatellite</item>
+	</string-array>
+		
+	<string-array name="mapTypePhrase">
+		<item>@string/MStandartName</item>
+		<item>@string/MSatelliteName</item>
+	</string-array>	
+		
+	<string name="PfBirthday">learn:macro:date:birthday</string>
+	<string name="PfGmailAccount">gmailAccount</string>
+	<string name="PfMailType">mailType</string>
+	<string name="PfYahooMailBox">yahooMailBox</string>
+	<string name="PfYahooDomain">yahooDomain</string>
+	
+	<string name="PfBluetoothSupport">bluetoothSupport</string>
+	<string name="PfFloatingButton">floatingButton</string>
+	<string name="PfKeepScreenAwake">keepScreenAwake</string>
+	<string name="PfSmsExcludeSignature">smsExcludeSignature</string>
+	
+	<integer name="MtGmail">0</integer>
+	<string name="MtGmailName">Gmail</string>
+	<integer name="MtYahoo">1</integer>
+	<string name="MtYahooName">Yahoo Mail</string>
+	
+	<integer-array name="mailType">
+	    <item>@integer/MtGmail</item>
+		<item>@integer/MtYahoo</item>
+	</integer-array>
+		
+	<string-array name="mailTypePhrase">
+		<item>@string/MtGmailName</item>
+		<item>@string/MtYahooName</item>
+	</string-array>
+		
+	<string-array name="temperatureType">
+	    <item>a</item>
+	    <item>c</item>
+	    <item>f</item>
+	</string-array>
+
+	
+	<string name="sms_alerts">SMS alerts</string>
+	<string name="call_alerts">Call alerts</string>
+	<string name="daily_news_update">Daily briefing</string>
+	<string name="bluetooth_support">Bluetooth support (beta)</string>
+	<string name="sms">SMS ...</string>
+	<string name="voice_notifications">Voice notifications</string>
+	<string name="read_msg">Read Sms instantly</string>
+	<string name="announce_sender">Announce sender</string>
+	<string name="repeat_text">Repeat dictation text</string>
+	<string name="suzie_auto_hide">Auto hide floating button</string>
+	<string name="prompt_to_read">Prompt to read incoming</string>
+	<string name="prompt_to_reply">Prompt to reply</string>
+	<string name="gmail_password">Gmail IMAP Password</string>
+	<string name="yahoo_password">Yahoo IMAP Password</string>
+	<string name="exclude_signature">Exclude Robin signature</string>
+	<string name="email_social">Sms / Email / Social ...</string>
+	<string name="mail_provider">Mail provider</string>
+	<string name="gmail_account">Gmail account</string>
+	<string name="yahoo_mail">Yahoo mail domain</string>
+	<string name="username">Username</string>
+	<string name="reset_twitter">Reset Twitter credentials</string>
+	<string name="reset_facebook">Reset Facebook credentials</string>
+	<string name="activation">Activation options ...</string>
+	<string name="status_bar_icon">Status bar menu</string>			
+	<string name="floating_button">Floating button</string>
+	<string name="keep_screen_awake">Keep screen awake</string>
+
+    <string name="handwaving">Activate by hand waving</string>
+    <string name="voiceactivationgroup">Activation by voice ...</string>
+    <string name="voiceactivation">Activate by voice (experimental)</string>
+    <string name="voiceactivationoncharging">Only when charging</string>
+
+	<string name="bell_off">Mic bell off</string>
+	<string name="help_hints">Say help hints</string>
+	<string name="greet_me">Always greet me</string>
+	<string name="personal_info">Personal info ...</string>
+    <string name="car_mode_options_title">Car mode ...</string>
+    <string name="car_mode_auto">Auto detect car mode</string>
+    <string name="car_mode_speaker">Turn on speaker</string>
+    <string name="car_mode_bt">Turn on bluetooth</string>
+    <string name="car_mode_digest">Read daily digest</string>
+    <string name="car_mode_big_button">Increase button</string>
+    <string name="car_mode_debug">Debug information</string>
+	<string name="your_name">Your name</string>
+	<string name="home_address">Home address</string>
+	<string name="work_address">Work address</string>
+	<string name="birthday">Your birthday</string>
+	<string name="preferences">Driving preferences ...</string>
+	<string name="spell_phone_numbers">Spell phone numbers</string>
+	<string name="fuel_type">Fuel type</string>
+	<string name="navigator_type">Navigator type</string>
+	<string name="map_view">Map view</string>
+	<string name="metric_system">Metric system</string>
+	<string name="temperature_in">Temperature in \u00B0 of</string>
+	<string name="reset_default_choices">Reset default programs</string>
+	<string name="qa_testing">QA testing</string>
+	<string name="voices">Voices and languages ...</string>
+	
+	<string name="download_male_voice">Download male voice</string>
+	<string name="download_female_voice">Download female voice</string>
+	<string name="download_russian_voice">Download Russian voice</string>
+	
+	
+	<string name="select_voice">Select voice</string>
+	<string name="language">Language</string>
+	<string name="privacy">Privacy Policy</string>
+									
+		
+	<string-array name="fuelTypePhrase">
+		<item>Regular</item>
+		<item>Plus</item>
+		<item>Premium</item>
+		<item>Diesel</item>
+	</string-array>
+	
+	<string-array name="navigatorTypePhrase">
+		<item>Google or Compatible</item>
+		<item>Waze</item>
+		<item>Other</item>
+		<!--  <item>Telenav</item> -->
+	</string-array>
+	
+	<string-array name="temperatureTypePhrase">
+	    <item>Auto Detect</item>
+	    <item>Celsius\u00B0</item>
+	    <item>Fahrenheit\u00B0</item>
+	</string-array>
+	
+	<string name="MStandartName">Standard</string>
+	<string name="MSatelliteName">Satellite</string>
+	<string name="VSystemName">System</string>
+	<string name="VFemaleName">Female</string>
+	<string name="VMaleName">Male</string>
+				
+</resources>

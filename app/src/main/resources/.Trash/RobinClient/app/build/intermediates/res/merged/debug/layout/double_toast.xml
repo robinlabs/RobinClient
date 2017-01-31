@@ -1,0 +1,43 @@
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/doubleToast"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+    >
+		
+        <TextView
+            android:id="@+id/queryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/toast_border"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+        />
+                
+        <TextView
+            android:id="@+id/queryInterpretationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/toast_answer_border"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+        />
+       
+    </LinearLayout>
+    
+   

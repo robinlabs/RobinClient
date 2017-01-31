@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="PT_MOBILE">мобильный</string>
+   <string name="PT_WORK_MOBILE">рабочий мобильный</string>
+   <string name="PT_WORK">рабочий</string>
+   <string name="PT_HOME">домашний</string>    
+</resources>

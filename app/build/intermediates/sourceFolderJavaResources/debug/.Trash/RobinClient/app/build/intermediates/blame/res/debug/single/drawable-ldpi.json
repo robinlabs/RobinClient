@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-ldpi/sbicon.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-ldpi/sbicon.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-ldpi/com_facebook_close.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-ldpi/com_facebook_close.png"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/drawable-ldpi/powered_by_google_on_white.png",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/drawable-ldpi/powered_by_google_on_white.png"
+    }
+]

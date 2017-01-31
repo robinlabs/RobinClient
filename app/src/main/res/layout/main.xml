@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.magnifis.parking.views.MainView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg" >
+
+    <!--
+    android:alwaysDrawnWithCache="false"
+    android:animationCache="false"
+    android:persistentDrawingCache="none" -->
+
+    <LinearLayout
+        android:id="@+id/Dialogs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" 
+        android:layout_marginBottom="64dp" 
+        >
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                 <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:visibility="gone"
+                    >
+<!--  
+                    
+                <TextView 
+                  android:text="#main"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+                    />
+                   -->
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+<!--  
+                    <ScrollView
+                        android:id="@+id/DialogScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:id="@+id/DialogView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:overScrollMode="always"
+                            android:paddingTop="4dp"
+                            android:scrollbarStyle="insideOverlay"
+                            android:scrollbars="vertical" >
+                        </LinearLayout>
+                        
+                    </ScrollView>
+                    -->
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+    <!--
+	<View 
+        android:id="@+id/wvScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        /> 
+        
+        // it shoule be here when the wevView button ends with the bottom panel begin
+    -->
+    <!--
+        android:layout_width="217px"
+        android:layout_height="480px"
+    -->
+
+    <LinearLayout
+        android:id="@+id/LogoBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/GoogleLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/powered_by_google_on_white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/BtnMyLocation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:onClick="onMyLocation"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_menu_mylocation"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/YelpLogo"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_gravity="top"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ParkingProviderLogo"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_gravity="top"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- details -->
+
+    <LinearLayout
+        android:id="@+id/webPlace"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/wvScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:visibility="gone" />
+
+    <!-- panels -->
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</com.magnifis.parking.views.MainView>

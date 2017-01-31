@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="help_url">http://www.magnifis.com/wpress/content/products/robin/Help/Help-1-10.html</string>
+<string name="teaching_url">http://173.255.249.124/android.php?</string>
+<string name="ad_self_tracking_url">http://analytics.magnifis.com/robin_ad_track.php?</string>
+
+
+ <string name="share_robin_subj">Meet Robin -- your personal eyes-free assistant on the road!</string>
+ <string name="share_robin_url">http://bit.ly/QNByLs</string>
+ <string name="parking_logo_url">http://www.magnifis.com/wpress/content/res/parkme_grey.png</string>
+ <string name="yelp_logo_url">http://media1.ak.yelpcdn.com/static/201012162846157596/img/developers/yelp_logo_50x25.png</string>
+ <string name="google_logo_url">https://maps.gstatic.com/mapfiles/powered-by-google-on-white.png</string>
+ 
+ <string name="acapela_voices_path_old">/acattsandroid</string>  
+ <string name="acapela_voices_path">/.MagnifisRobin/acattsandroid</string>
+ 
+ <integer name="far_away_distance">50000</integer> 
+ <string name="publisher_public_key_base64">
+  MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxzBU1wJg0q4+4jHt3cuFg/+UlUVug3RTXqLOshXQecaOzZ13uy/MUfolaP2W+cVBw7lEMe3FlRJccRRqxitr/921zjrXsdnl//d9M/vz3IQ3CNrpUeQohVTFZWeKgGsrGjP1E6aZyb7rkC+75/9uQ56m4vQtD3yPXBiw8d675jASJ3SPBkXK7FhAMfaip7NIqV7NquJmlQDP/Vo+h3K85XcPsFbVaUX+7CeYQM4kQzAxUQBYRafIR0EQoTpGcPFou6IG6f+HzZd77m16kPNAlQ5TbQUqQht/bmIkE/no0veLD6RN2nvWs/1syap+FryHjAyvallEHJV8MWknpniDfwIDAQAB
+ </string>
+ <string name="adv_for_mail">\n\n------\nSent via Robin, my eyes-free assistant http://bit.ly/Vpmaem.</string>
+ <string name="adv_for_sms">(via Robin http://bit.ly/PeeTwl)</string>
+ 
+ <string name="appstore">google</string>
+
+ <string name="second_voice_download_url_old">http://www.magnifis.com/usenglish-ryan-lf-22khz.zip</string>
+ 
+  <string name="second_voice_download_url">http://magnifis.com/usenglish-ryan-lf-22khz_v2.zip</string>
+  <string name="russian_voice_download_url">http://magnifis.com/russian-alyona-lf-22khz_v2.zip</string>
+  <string name="female_voice_download_url">http://magnifis.com/usenglish_heather-lf-22khz_v2.zip</string>
+ 
+ <string name="privacy_policy_url">http://robingets.me/Robin-privacy-policy.html</string>
+</resources>

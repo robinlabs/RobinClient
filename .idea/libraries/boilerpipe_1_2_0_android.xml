@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="boilerpipe-1.2.0-android">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/boilerpipe-1.2.0-android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

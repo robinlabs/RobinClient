@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.magnifis.parking.views.ScalableShort xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="143px"
+    android:clickable="true" >
+
+    <com.magnifis.parking.views.ScalableShort
+        android:layout_width="573px"
+        android:layout_height="432px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/details_window_landscape" >
+
+        <com.magnifis.parking.views.ScalableLLShort
+            android:id="@+id/Toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="16px"
+            android:orientation="vertical" >
+                
+           <com.magnifis.parking.views.ScalableLLShort
+                android:id="@+id/BtnGoEnv"
+                android:layout_width="181px"
+                android:layout_height="66px"
+                android:layout_weight="1" >
+
+                <View
+                    android:id="@+id/BtnGoThere"
+                    android:layout_width="181px"
+                    android:layout_height="66px"
+                    android:background="@drawable/navigate_button_ss"
+                    android:clickable="true"
+                    android:onClick="onNavigate" />
+            </com.magnifis.parking.views.ScalableLLShort>
+
+            <com.magnifis.parking.views.ScalableLLShort
+                android:id="@+id/BtnCallEnv"
+                android:layout_width="181px"
+                android:layout_height="66px"
+                android:layout_weight="1" >
+
+                <View
+                    android:id="@+id/BtnCall"
+                    android:layout_width="181px"
+                    android:layout_height="66px"
+                    android:background="@drawable/call_button_ss"
+                    android:clickable="true"
+                    android:onClick="onCall" />
+            </com.magnifis.parking.views.ScalableLLShort>
+        </com.magnifis.parking.views.ScalableLLShort>
+
+        <com.magnifis.parking.views.ScalableShort
+            android:id="@+id/SpecificDetailsHolder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/Toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="25px" >
+        </com.magnifis.parking.views.ScalableShort>
+
+        <com.magnifis.parking.views.ScalableLLShort
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="32px"
+            android:layout_marginLeft="60px"
+            android:layout_toLeftOf="@id/Toolbar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ParkingAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/ParkingPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onCall"
+                android:textColor="@android:color/white"
+                android:textSize="34px" />
+        </com.magnifis.parking.views.ScalableLLShort>
+    </com.magnifis.parking.views.ScalableShort>
+
+</com.magnifis.parking.views.ScalableShort>

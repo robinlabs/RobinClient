@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="google_map_key">0VJkwh3q5nOTiDVHRY3yrGSEPrfaenGZJWkUmsg</string>
+
+    <!--
+    05VvL7TTfnUzjGYbyxYbNtbTyGlwuthRbizwpVw zeev
+    0Y7YX-Pg8hZNV7P1R7EjwzB8u1Ws2CHJkMNR1tw vlad
+    05VvL7TTfnUzjGYbyxYbNtbTyGlwuthRbizwpVw old
+    <string name="google_map_key">0VJkwh3q5nOTiDVHRY3yrGSEPrfaenGZJWkUmsg</string>
+    -->
+    <string name="google_map_key_debug">0VJkwh3q5nOTuSEis4P9jq2aPhoUnfDm9xoSQVQ</string>
+    <string name="google_map_key_release">0VJkwh3q5nOTiDVHRY3yrGSEPrfaenGZJWkUmsg</string>
+    <string name="scaled">SCALED</string>
+    <string name="tag_query">QUERY</string>
+    <string name="tag_bubble_options">BUBBLE_OPTIONS</string>
+    <string name="tag_tab_attr">TAG_TAB_ATTR</string>
+    
+     <string name="DialogScroll">DialogScroll</string>
+     <string name="DialogView">DialogView</string>  
+    
+    <string name="don_t_scale_font">don_t_scale_font</string>
+    <string name="remove_on_hiding">REMOVE_ON_HIDING</string>
+    
+    
+    
+    <string name="chadwick_webapp_url">http://bball-live.com/lastgame/nba/mia</string>
+    <string name="title_activity_send_sms">SendSmsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="activity_send_sms_begin_dictating">• Begin Dictating</string>
+    <string name="activity_send_sms_erase">• "Erase"</string>
+    <string name="activity_send_sms_delete">\u0020"Delete"</string>
+    <string name="activity_send_sms_or">\u0020or</string>
+    <string name="activity_send_sms_toedit">\u0020to Edit</string>
+    <string name="activity_send_sms_clearall">• "Clear All"</string>
+    <string name="activity_send_sms_toeraseeverything">\u0020to Erase Everything</string>
+    <string name="activity_send_sms_replacehiwithhowdy">• "Replace Hi with Howdy"</string>
+    <string name="activity_send_sms_tosubstitute">\u0020to Substitute</string>
+
+</resources>

@@ -1,0 +1,358 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_picker_search_box.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_picker_search_box.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/details_landscape.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/details_landscape.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/youtube_activity.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/youtube_activity.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/widget_nfy_menu.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/widget_nfy_menu.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/gas_details.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/gas_details.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/web_activity.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/web_activity.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_picker_list_section_header.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_picker_list_section_header.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_picker_title_bar.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_picker_title_bar.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/parking_load_landscape.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/parking_load_landscape.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_picker_checkbox.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_picker_checkbox.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_picker_title_bar_stub.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_picker_title_bar_stub.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/details.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/details.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_friendpickerfragment.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_friendpickerfragment.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/parking_details_landscape.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/parking_details_landscape.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/suzie_btn_layout_small.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/suzie_btn_layout_small.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/poi_details_google.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/poi_details_google.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_bar_menu_buttons.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/notification_bar_menu_buttons.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_picker_list_row.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_picker_list_row.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/weather.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/weather.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/status_bar_ongoing_event_progress_bar.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/status_bar_ongoing_event_progress_bar.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/sms_alert.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/sms_alert.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/suzie_buble_query.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/suzie_buble_query.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/widget_w_joke.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/widget_w_joke.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/suzie_buble_answer.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/suzie_buble_answer.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/widget_1x1.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/widget_1x1.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_usersettingsfragment.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_usersettingsfragment.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/poi_details_google_landscape.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/poi_details_google_landscape.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/activity_send_sms_new.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/activity_send_sms_new.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/flashlight_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/flashlight_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/parking_details.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/parking_details.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/suzie_bubles_tvdemo.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/suzie_bubles_tvdemo.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/double_toast.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/double_toast.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/suzie_buble_message.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/suzie_buble_message.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_placepickerfragment_list_row.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_placepickerfragment_list_row.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/buble_answer_flat.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/buble_answer_flat.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/suzie_bubles.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/suzie_bubles.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/bottom_panel_universal.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/bottom_panel_universal.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/parking_load.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/parking_load.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/forecast.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/forecast.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_placepickerfragment.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_placepickerfragment.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/suzie_buble_bg.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/suzie_buble_bg.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/suzie_options.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/suzie_options.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_picker_image.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_picker_image.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_login_activity_layout.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_login_activity_layout.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/com_facebook_picker_activity_circle_row.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/com_facebook_picker_activity_circle_row.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/buble_query_flat.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/buble_query_flat.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/poi_details_landscape.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/poi_details_landscape.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/activity_send_sms.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/activity_send_sms.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/poi_details.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/layout/poi_details.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_select_dialog_material.xml"
+    }
+]

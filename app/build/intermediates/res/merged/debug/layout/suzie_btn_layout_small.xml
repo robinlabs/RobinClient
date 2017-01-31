@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  800=>960 -->
+<com.magnifis.parking.views.ScalableShort xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suzie"
+    android:layout_width="64px"
+    android:layout_height="64px">
+
+        <View
+            android:id="@+id/btnSuzie"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_free" />
+        
+        <View
+            android:id="@+id/MicAnimationError"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_free_fail"
+            android:visibility="gone"
+         />
+
+        <View
+            android:id="@+id/MicAnimationBg"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_active"
+            android:visibility="gone"
+         />
+
+        <View
+            android:id="@+id/MicAnimation"
+            android:layout_width="23px"
+            android:layout_height="35px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="18px"
+            android:background="@drawable/mcanim"
+            android:visibility="gone"
+         />
+
+        <ProgressBar
+            android:id="@+id/progressBarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginBottom="0px" />
+        
+</com.magnifis.parking.views.ScalableShort>

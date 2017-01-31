@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:longClickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+   	    
+		<ImageView
+		    android:layout_width="18dp"
+		    android:layout_height="14dp"
+		    android:layout_marginTop="10dp"
+		    android:background="@drawable/chatbubble3_top_left" />
+	    
+		<ImageView
+		    android:layout_width="match_parent"
+		    android:layout_height="14dp"
+		    android:layout_marginRight="18dp"
+		    android:layout_marginTop="10dp"
+		    android:background="@drawable/chatbubble3_top_fill" />
+		
+		<ImageView
+		    android:layout_width="18dp"
+		    android:layout_height="14dp"
+		    android:layout_marginLeft="-19dp"
+		    android:layout_marginTop="10dp"
+		    android:background="@drawable/chatbubble3_top_right" />
+	    
+		<ImageView
+		    android:id="@+id/topArrow"
+		    android:layout_width="46dp"
+		    android:layout_height="18dp"
+		    android:layout_marginLeft="-100dp"
+		    android:background="@drawable/chatbubble3_top_arrow" />
+		
+	</LinearLayout>
+     
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+   	    
+		<ImageView
+		    android:layout_width="18dp"
+		    android:layout_height="match_parent"
+		    android:background="@drawable/chatbubble3_middle_left" />
+	    
+		<com.magnifis.parking.views.NoneScalableTextView
+		    android:id="@+id/textViewBubleAnswer"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="18dp"
+		    android:background="@drawable/chatbubble3_middle_fill"
+		    android:shadowColor="@android:color/black"
+		    android:text="test"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="#333333" />
+				
+		<ImageView
+		    android:layout_width="18dp"
+		    android:layout_marginLeft="-19dp"
+		    android:layout_height="match_parent"
+		    android:background="@drawable/chatbubble3_middle_right" />
+	    
+	</LinearLayout>
+    
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+   	    
+		<ImageView
+		    android:layout_width="18dp"
+		    android:layout_height="14dp"
+		    android:background="@drawable/chatbubble3_bottom_left" />
+	    
+		<ImageView
+		    android:layout_width="match_parent"
+		    android:layout_height="14dp"
+	    	android:layout_marginRight="18dp"
+		    android:background="@drawable/chatbubble3_bottom_fill" />
+		
+		<ImageView
+		    android:layout_width="18dp"
+		    android:layout_height="14dp"
+		    android:layout_marginLeft="-19dp"
+		    android:background="@drawable/chatbubble3_bottom_right" />
+	    
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="SettingsTitle">Settings</string>
+    <string name="P_shortlang">en</string>
+    <string name="P_lang">english</string>
+    <string-array name="daysOfWeek">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="daysOfWeekShort">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="occupancyPhrases">
+    	     <item>, It looks like the occupancy should be </item>
+    		 <item>, expect the competition to be </item>
+    		 <item>, It appears the occupancy should be </item>
+    		 <item>, I\'d say the competition is likely </item>
+    		 <item>, I suspect the occupancy to be </item>
+    		 <item>, The occupancy is probably </item>
+    		 <item>, The occupancy seems to be </item>
+    		 <item>, The competition seems to be </item>
+    </string-array>
+    <string-array name="foundOptionPhrases">
+     		<item>I found several parking options. </item>
+            <item>I found multiple parking options.  </item>
+    	    <item>Here are some parking choices for you. </item>
+    		<item>I found a few parking choices. </item>
+    		<item>I found a few parking destinations. </item>
+    </string-array>
+    <string-array name="P_no_parking">
+    	<item>I could not find any available parking. </item>
+    	<item>No parking there, as far as I can tell. </item>
+    </string-array>
+     <string-array name="P_no_option">
+    	<item>I could not find any available option. </item>
+    	<item>No option there, as far as I can tell. </item>
+    </string-array>
+    <string-array name="launchNavPhrases">
+            <item>Launching navigation, If you need me, just wave hello!  </item>
+    	    <item>Starting navigation, Just wave hello if you miss me! </item>
+    	    <item>Launching navigation, I\'ll be on stand by if you need me. </item>
+    </string-array>
+    <string-array name="cannotCallPhrases">
+     		<item>I\'m afraid these guys are too low tech for that. </item>
+            <item>Oops, looks like they prefer to remain off line. </item>
+    	    <item>I wish I could, but these guys are so 20th century! </item>
+    </string-array>
+    <string name="P_no_selection"> there is no selected object to describe . </string>
+    <string name="P_want_to_return"> . Would you like to go back? </string>
+    <string name="P_sure_to_go_there"> .  Do you really want to go that far? </string>
+    <string name="P_sure"> .  Are you sure? </string>
+
+    <string name="P_welcome">Hello! I am Robin, your personal assistant on the road. I am here to aid you with directions, parking, weather, traffic, local places and lots of other good stuff. Also, I am learning to do more as I go. Just press the microphone any time or wave your hand twice in front and above the screen, and I\'ll be at your service. I feel this is a beginning of a magnificent friendship!</string>
+    <string name="P_welcome_0">Hello!</string>
+    <string name="P_welcome_1">I am Robin, your personal assistant on the road. I am here to aid you with directions, parking, weather, traffic, local places and lots of other good stuff. Also, I am learning to do more as I go. Just press the microphone any time or wave your hand twice in front and above the screen, and I\'ll be at your service. I feel this is a beginning of a magnificent friendship!</string>
+
+    <string name="P_info">To ask a question, just press the microphone or wave your hand twice in front and above the screen. Here are a few examples of what you could ask.</string>
+    <string name="P_info_nowave">To ask a question, just press the microphone. Here are a few examples of what you could ask.</string>
+    <string name="P_is_that_right"> Is that right? </string>
+    <string name="P_no_details"> I don\'t have any details for this parking lot </string>
+    <string name="P_no_location">. I am not certain about that place.</string>
+    <string name="P_forecast_restriction">. I can only give weather forecast for the next 4 days.</string>
+    <string name="P_provide_feedback">Please provide your feedback to my parents. </string>
+    <string name="POI_none_at_location">. I could not find any. Shall we try something else? </string>
+    <string name="P_unknown_custom_location">. I don\'t know yet where </string>
+    <string name="P_YOU_NEED_GVS">You need to install Google Voice Search to use our voice input.</string>
+    <string name="T_VOICE_IS_MISSING">Robin\'s voice is missing</string>
+    <string name="T_DOWNLOADED_IS_CORRUPT">The downloaded bundle is corrupt</string>
+    <string name="Q_OK_TO_GET">OK to go get it from the cloud now?</string>
+    <string name="Q_OK_TO_GET_AGAIN">OK to go get it from the cloud again?</string>
+    <string name="M_EXT_STORAGE_REQUIRED">This application requires external storage to work.</string>
+    <string name="P_NO_TWITTER_CONTEXT"> Sorry, I got confused. Again, what kind of content are we talking about? </string>
+    <string name="P_NO_TWEETS"> There are no tweets to play. </string>
+    <string name="P_NOTHING_TO_RETWEET"> I don\'t know what to retweet. </string>
+    <string name="P_SOMETHING_WENT_WRONG"> Oops, Something went wrong... Please, try again later. </string>
+    <string name="P_SUCH_EVENT_ALREADY_EXISTS"> there is already such event in the calendar.  </string>
+    <string name="P_TEXT_INPUT_REQUIRED"> You should enter something. </string>
+    <string name="P_ANDROID23_REQUIRED"> You need Android 2.3 or higher to do this. </string>
+    <string name="P_BEFORE_POI_REC"> People say: </string>
+    <string name="P_YOUR_LOCATION_IS"> Your location is: </string>
+    <string name="P_YOUR_APPROXIMATE_LOCATION_IS"> Your approximate location is: </string>
+    <string name="P_NO_CURRENT_LOCATION">. I cannot tell your current location. Please check your GPS settings.</string>
+    <string name="P_LOCATION_TWITTED">. Your location has been tweeted. </string>
+    <string name="P_ENABLE_TWITTER_LOCATION"> . You should enable location sharing in your twitter settings
+        to add a map to your tweet.
+        </string>
+
+    <string name="P_TRYING_TO_LAUNCH"> Trying to launch ${app} </string>
+    <string name="P_CAN_NOT_LAUNCH">Sorry, can not launch ${app} </string>
+    <string name="P_CAN_NOT_CLOSE">Sorry, can not close ${app} </string>
+    <string name="P_NO_SUCH_PERSON">Sorry, there is no ${person} in your phonebook. </string>
+    <string name="P_REALLY_SEND">Really send ${person} ?</string>
+    <string name="P_SELECT_CONTACT">I found several matching contacts. Please make your pick!</string>
+    <string name="P_NO_MORE_MATCHING_CONTACTS">There is no more matching contacts.</string>
+    <string name="P_MAKE_YOUR_PICK">Please make your pick!</string>
+
+    <string name="P_LOOK_AROUND_GPS"> Please turn on your GPS to let me look around You. </string>
+    <string name="P_LOOK_AROUND_GPS_COLD"> Your GPS is cold oh so cold. Please wait till it warms upu. </string>
+    <string name="P_EXACT_LOCATION_GPS"> Please turn on your GPS to get or share your exact location. </string>
+    <string name="P_EXACT_LOCATION_COLD_GPS"> Your GPS is cold oh so cold. Please wait till it warms up to get or share your exact location. </string>
+
+    <string name="M_LOCATION_EMAIL_SUBJ">My Location</string>
+
+    <string name="P_TEACH_ME_WHERE_IS"> Please teach me where your ${dst} is </string>
+    <string name="P_DONT_KNOW_WHERE_YOU_ARE"> I don\'t know where you are.  </string>
+
+    <string name="P_ENTER_ANOTHER_ADDRESS"> I don\'t know where that is. Please, enter another address. </string>
+    <string name="P_RATE_ME_ON_GOOGLE">Would you like to play? I mean, Google Play: I take you there, you rate me. Game? </string>
+    <string name="P_DWNLD_MALE_VOICE_DLG_TTL"> Do you mind if I download an extra voice, to spice things up a bit? </string>
+    <string name="P_DWNLD_FEMALE_VOICE_DLG_TTL"> Do you mind if I download the voice? </string>
+    <string name="P_DWNLD_ALYONA_VOICE_DLG_TTL">Looks like you speak Russian. Скачать русский голос, чтобы общаться по-русски?</string>
+
+    <string name="P_DWNLD_MALE_VOICE_CANCEL"> Ok, you can always download it later from my settings. </string>
+    <string name="female_voice_download_description"> Robin voice download</string>
+    <string name="P_DWNLD_MALE_VOICE_OK"> Thank you, it will be downloaded shortly. To put it to use, ask me about latest news in just a bit. </string>
+    <string name="P_DWNLD_ALYONA_VOICE_CANCEL"> Нет так нет, это можно сделать и позднее из моих настроек. </string>
+    <string name="P_DWNLD_ALYONA_VOICE_OK"> Есть, процесс пошел! Скоро сможем болтать вовсю! </string>
+    <string name="P_ASK_SHORTCUT_TRAY">Would you like to have a quick shortcut to me up in system tray?</string>
+    <string name="P_ASK_WAZE_AS_DEFAULT">Would you like to use Waze as your default navigator? </string>
+    <string name="P_ASK_WAZE_OK">Swell, setting Waze as your default navigator. You can always change that in my settings. </string>
+    <string name="P_ASK_WAZE_CANCEL"> As you wish. You can always change your selection in my settings. </string>
+    <string name="P_CANCELLING"> OK, cancelling it. </string>
+    <string name="P_YES_OR_NO"> Please, say yes, no or cancel. </string>
+    <string name="P_SAY_OTHER"> or say Other. </string>
+
+
+
+    <string-array name="welcomePhrases">
+   <item> Hello ${username}! Welcome back! </item>
+   <item>Good ${partofday} ${username}! I missed you. </item>
+   <item>Good ${partofday}, ${username}! Whether it\'s serious tasks or jokes, I am at your service.</item>
+   <item>Hi there ${username}! Oh this is going to be fun! </item>
+   <item> Hello ${username}! What are we doing today?  </item>
+   <item>Hello ${username}! What are we doing today?  </item>
+   <item>Welcome back ${username} - I\'m ready for you!</item>
+    </string-array>
+
+    <string-array name="newsSnippetPrefixes">
+        <item>Now, let\'s see... </item>
+        <item>Oh, here we go!</item>
+        <item>Now this could be something!</item>
+        <item>Check this out! </item>
+        <item>Well well well: </item>
+        <item>Let me see.</item>
+    </string-array>
+
+    <string-array name="confirmationPrefixes">
+        <item>Ok, </item>
+        <item>Sure, </item>
+        <item>Okie dokie, </item>
+        <item>Very well, </item>
+        <item>Fair enough, </item>
+        <item>Certainly, </item>
+        <item>Definitely, </item>
+        <item>No problem, </item>
+    </string-array>
+
+     <string-array name="donePhrases">
+        <item> Ok, here we go!</item>
+        <item> Piece of cake! </item>
+        <item> Easy as a pie! </item>
+        <item> Done! </item>
+    </string-array>
+
+      <string-array name="remarkPhrases">
+        <item> says: </item>
+        <item> says: </item> <!-- twice on purpose -->
+        <item> notes: </item>
+        <item> remarks: </item>
+        <item> posts: </item>
+    </string-array>
+
+
+
+
+
+
+     <string-array name="trafficIntelPhrases">
+        <item>Sending my spies to check the road conditions...</item>
+        <item>Deploying my agents to gather road observations...</item>
+        <item>Checking my sources and running the numbers...</item>
+        <item>Gathering field intelligence...</item>
+        <item>Let me put my intelligence network to use for you... </item>
+        <item>Scanning road conditions...</item>
+        <item>Let me check the roads and run the numbers...</item>
+    </string-array>
+
+        <string-array name="trafficIntelPhrasesOld">
+        <item>Sending my spies to check the road conditions... Tun duh dun tun, tun duh dun!</item>
+        <item>Deploying my agents to gather road observations... This won\'t take long... One, two, three, and...</item>
+        <item>Checking my sources... Almost there, let me run the numbers now... Hmm...</item>
+        <item>Gathering field intelligence... Oh my, so much data, so little time! Anyway, here we go: </item>
+        <item>Let me put my intelligence network to use for you... Hmm, where is that report now?.. Oh I think I got it... </item>
+        <item>Scanning road conditions... A-ha... Running the numbers now... Almost there... </item>
+        <item>Let me check the roads. There\'s time enough, but none to spare. Oh good, looks like I\'m almost there ...</item>
+    </string-array>
+      <string-array name="trafficConditionPhrases">
+        <item> in current traffic, </item>
+        <item> in current conditions, </item>
+        <item> with traffic, </item>
+        <item> , current delays included, </item>
+     </string-array>
+
+    <string name="P_ANDROID_VERSION_TOO_LOW">This feature is not yet supported for your device. Please check back soon.</string>
+    <string name="P_SUGGEST_SHARE_LOCATION"> Ask me to share your location any time you like. </string>
+    <string name="P_COMMUNICATION_WMS"> </string>
+    <string name="P_WRONG_PASSWORD"> The password is wrong, please enter a right one ... </string>
+    <string name="P_PASSWORD_NOT_SPECIFIED">  Please enter a password </string>
+    <string name="P_NO_NEW_MESSAGES"> There are no more new messages. </string>
+
+    <string name="P_ALREDY_SPEAK_FEMALE"> Oopsie, I am already speaking with a female voice </string>
+    <string name="P_ALREDY_SPEAK_MALE"> Obviously, I am already speaking with a male voice </string>
+    <string name="P_MALE_NO_INSTALLED"> Oh boy, you do not have it installed. You can go to my settings and download it </string>
+
+    <string name="P_SAY_YOUR_TEXT_TO_TRANSLATE"> Say your text in</string>
+
+    <string name="P_SAY_YOUR_MSG"> Say your message</string>
+    <string name="P_SAY_YOUR_MSG_LANG"> Say your message in </string>
+    <string name="P_SAY_YOUR_MSG_AGAIN"> Say your message again</string>
+    <string name="P_DONT_UNDERSTAND_YOU">Sorry, I couldn\'t understand you. Here you can write your message.</string>
+    <string name="P_YOU_SAID"> Your message will say: </string>
+    <string name="P_YOU_CAN_SEND_MESSAGE"> Here you can edit and send your message </string>
+    <string name="P_YOUR_EVENTS"> Your events for </string>
+    <string name="P_YOU_HAVENT_ANY"> You don\'t have any </string>
+    <string name="P_ALL_DAY_EVENT"> All day event </string>
+    <string name="P_REPLYING"> Replying to </string>
+
+    <string name="P_FB_STATUS_UPDATED"> I\'ve updated your Facebook status. </string>
+
+    <string name="P_TW_CREDENTTIALS_RESETED"> Ok, I did reset your twitter credentials </string>
+    <string name="P_FB_CREDENTTIALS_RESETED"> Ok, I did reset your facebook credentials </string>
+
+    <string name="P_MISSED_BIRTHDAY"> Ok, let me check. You didn\'t tell me it before. Please insert your birthday here. </string>
+
+    <string name="P_YOU_SHARED_ME_ON_FB">Facebook sharing accomplished!</string>
+
+    <string name="P_SAY_RECEIVER_NAME">Say receiver\'s name</string>
+    <string name="P_NEWS_INTRO">Latest updates from Robin\'s news room ...</string>
+    <string name="P_FB_NEWS_INTRO">Here are your personal news provided by Robin ... \n</string>
+    <string name="P_NO_MUSIC_APP">To play music you need to install external program like Youtube or Pandora.</string>
+    <string name="P_TRAY_HINT">Use settings to disable this shortcut</string>
+    <string name="sms_radion_off">Radio off</string>
+    <string name="sms_null_pdu">Null PDU</string>
+    <string name="sms_no_service">No service</string>
+    <string name="sms_generic_failure">Generic failure</string>
+    <string name="sms_sent_to">Text sent to</string>
+    <string name="the_message">the message</string>
+    <string name="sms_message">message</string>
+    <string name="sms_message_from">message from</string>
+    <string name="sms_message_received">received</string>
+    <string name="sms_message_says">says: </string>
+    
+    <string-array name="sent_prepare_to_read">
+   		 <item> Sent you a text message, please wait, let me read it to you .. .. .. .. .. The message reads: </item>
+   		 <item> Sent you a text message, I am going to read it to you in just a moment .. .. .. .. .. The message reads: </item>
+   		 <item> Sent you a text message, just a moment, let me fetch it .. .. .. .. .. The message reads: </item>
+   		 <item> Sent you a text message, let\'s see what it says, just a second .. .. .. .. .. The message reads: </item>
+    </string-array>
+    
+    
+    <string name="sms_arrived">new message arrived</string>
+    <string name="message_subject">with subject:</string>
+
+    <string name="share_loc_my_loc">My location is:</string>
+    <string name="share_approximate_loc_my_loc">My approximate location is:</string>
+    <string name="share_loc_url">http://maps.google.com/?z=17&amp;q=</string>
+    <string name="poi_more_details">Click the icon to see </string>
+    <string name="poi_yelp_reviews"> reviews at Yelp.</string>
+    <string name="poi_google_more"> reviews at Google.</string>
+    <string name="pks_no_more_parking">There are no more parking choices available.</string>
+    <string name="phrases_part_of_day_morning">morning </string>
+    <string name="phrases_part_of_day_afternoon">afternoon </string>
+    <string name="phrases_part_of_day_evening">evening </string>
+    <string name="phrases_part_of_day_you_up_late">lord, you are up so late </string>
+    <string name="phrases_no_custom_location_end"> is. </string>
+    <string name="phrases_append_distance_less_five_hundred_meters"> less than five hundred meters </string>
+    <string name="phrases_append_distance_less_quarter_kilometer"> less than a quarter kilometer </string>
+    <string name="phrases_append_distance_less_half_kilometer"> less than half a kilometer </string>
+    <string name="phrases_append_distance_less_three_quarters_kilometer"> less than three quarters of a kilometer </string>
+    <string name="phrases_append_distance_kilometer">kilometer </string>
+    <string name="phrases_append_distance_kilometers">kilometers </string>
+    <string name="phrases_append_distance_less_five_hundred_feet"> less than five hundred feet </string>
+    <string name="phrases_append_distance_less_quarter_mile"> less than a quarter mile </string>
+    <string name="phrases_append_distance_less_half_mile"> less than half a mile </string>
+    <string name="phrases_append_distance_less_three_quarters_mile"> less than three quarters of a mile </string>
+    <string name="phrases_append_distance_mile">mile </string>
+    <string name="phrases_append_distance_miles">miles </string>
+    <string name="phrases_append_distance_away"> away </string>
+    <string name="phrases_say_order_by_distance">The closest one is </string>
+    <string name="phrases_say_order_by_price">The cheapest one is </string>
+    <string name="phrases_say_order_by_vacancy">The best bet, vacancy-wise, is </string>
+    <string name="phrases_say_order_by">The top pick is </string>
+    <string name="phrases_pks_form_vacancy_unknown">unknown </string>
+    <string name="phrases_pks_form_vacancy_low">low </string>
+    <string name="phrases_pks_form_vacancy_medium">medium </string>
+    <string name="phrases_pks_form_vacancy_high">high </string>
+    <string name="phrases_pks_form_vacancy_there">there </string>
+    <string name="phrases_gas_form_cost_about">, charging about </string>
+    <string name="phrases_gas_form_cost_per_gallon"> per gallon </string>
+    <string name="phrases_gas_form_cost_cheapest"> . Probably the cheapest one around. </string>
+    <string name="phrases_pks_form_cost_costs">the costs are </string>
+    <string name="phrases_pks_form_cost_and"> and </string>
+    <string name="phrases_pks_form_cost_free_of_charge"> it is free of charge. </string>
+    <string name="phrases_pks_form_cost_per_hour">costs a dollar per hour. </string>
+    <string name="phrases_pks_form_cost_costs2">costs</string>
+    <string name="phrases_pks_form_cost_dollars_hour">dollars an hour.</string>
+    <string name="phrases_say_description_on_street_spot">On-street spot at</string>
+    <string name="phrases_say_description_and_half">and a half</string>
+    <string name="phrases_say_description_rated">rated</string>
+    <string name="phrases_say_description_stars">stars</string>
+    <string name="phrases_say_description_based_on">based on</string>
+    <string name="phrases_say_description_reviews">reviews.</string>
+    <string name="messagefeedcontroller_getthingname">message</string>
+    <string name="messagefeedcontroller_getthingsname">messages</string>
+    <string name="messagefeedcontroller_messages">messages</string>
+
+    <string name="messagefeedcontroller_read_more">reading more</string>
+    <string name="messagefeedcontroller_read_previous"> the previous </string>
+    <string name="messagefeedcontroller_is">is</string>
+    <string name="messagefeedcontroller_read_next">the next</string>
+    <string name="messagefeedcontroller_repeating">repeating</string>
+    <string name="messagefeedcontroller_the"> the </string>
+    <string name="messagefeedcontroller_there_are_no">there are no</string>
+    <string name="messagefeedcontroller_more">more</string>
+    <string name="messagefeedcontroller_previous">previous</string>
+    <string name="messagefeedcontroller_to_read">to read</string>
+    <string name="messagefeedcontroller_new">new</string>
+    <string name="messagefeedcontroller_reading_older">, reading older ones </string>
+    <string name="mapitemsetcontroller_no_more_options">There are no more choices available.</string>
+    <string name="mapitemsetcontroller_say_and_go_other_no_more_options">. I\'m feeling uncertain about the location right now.</string>
+    <string name="mapitemsetcontroller_say_and_go_other_previous_option">. The previous option was</string>
+    <string name="mapitemsetcontroller_say_and_go_other_another_option">. Another option is </string>
+    <string name="shell_i_read_it">Shall I read it?</string>
+    <string name="mainactivity_new_message">New message. Shall I read it?</string>
+    <string name="mainactivity_please_repeat">Would you please repeat that?</string>
+    <string name="mainactivity_reportweather_forecast">The forecast is:</string>
+    <string name="mainactivity_reportweather_expected_temperatures">Expected temperatures are between </string>
+    <string name="mainactivity_reportweather_to">to</string>
+    <string name="mainactivity_reportweather_degrees">degrees</string>
+    <string name="mainactivity_navigateto_attention">Attention: expected delays on your route! Robin\'s traffic center reports: </string>
+    <string name="mainactivity_navigateto_delayed">delayed by</string>
+    <string name="mainactivity_navigateto_minutes">minutes.</string>
+    <string name="mainactivity_navigateto_check_route_options">I would check my route options if I were you.</string>
+    <string name="mainactivity_navigateto_again">Again,</string>
+    <string name="mainactivity_performnavigationifcan_not_sure">I am not sure I know where we are going.</string>
+    <string name="mainactivity_handlenooption_nearest_one">The nearest one is at</string>
+    <string name="mainactivity_handlenooption_but">, but</string>
+    <string name="mainactivity_consumexmldata_reading_new_messages">reading your new messages</string>
+    <string name="mainactivity_consumexmldata_reminder_is_set">the reminder is set</string>
+    <string name="mainactivity_consumexmldata_alarm_is_set">the alarm is set</string>
+    <string name="mainactivity_hanldenewparkinglocation_data_source_is_silent">. My parking data source is silent right now.</string>
+    <string name="mainactivity_onpostexecute_network_not_connected">Oops, something went wrong. Please make sure you are connected to network or try again later.</string>
+    <string name="mainactivity_onpostexecute_just_in_case">Just in case,</string>
+    <string name="mainactivity_onpostexecute_one_parking_option">I found one parking option for you. It is</string>
+    <string name="mainactivity_onpostexecute_found_one">I found one</string>
+    <string name="mainactivity_onpostexecute_gas_station">gas station</string>
+    <string name="mainactivity_onpostexecute_gas_station_for_you">option for you. It</string>
+    <string name="mainactivity_onpostexecute_found_contacts">I found several matches in your contacts. Please select the one I should call</string>
+
+    <string name="P_want_to_reply">Do you want to reply?</string>
+    <string name="P_what_person">Which one? </string>
+    <string name="P_what_person_w_command">Which one? How about a specific instruction like, </string>
+    <string name="P_no_such_person_in_list">There is no ${person} in the list. 
+           Please tell me which ${callee} to call .</string>
+
+
+    <string name="mainactivity_onpostexecute_texting">Texting </string>
+    <string name="mainactivity_onpostexecute_calling">Calling</string>
+    <string name="mainactivity_onpostexecute_calling_tap_to_abort"></string>
+    <string name="mainactivity_onpostexecute_dont_know_to_route">I don\'t know where to route</string>
+    <string name="mainactivity_onpostexecute_dont_know_last_parking_place">I don\'t know last parking place</string>
+    <string name="mainactivity_onpostexecute_you_are_driving_now">You are driving now</string>
+    <string name="mailfeedcontroller_advance_promt">Read it / Next one</string>
+    <string name="listenandlaunchactivity_say_to_robin">Say something to Robin</string>
+    <string name="launchers_like_robin">I actually like Robin, worth a shot!</string>
+    <string name="launchers_select_activity">Pick app</string>
+    <string name="launchers_use_by_default">Always use this app</string>
+    <string name="fbhelper_app_name">Robin</string>
+    <string name="fbhelper_app_desc">Your personal eyes-free assistant on the road</string>
+    <string name="fbhelper_need_to_access_your_account_to_produce_horoscope">I need to access your Facebook account to produce the horoscope.</string>
+    <string name="fbhelper_need_to_access_your_account_to_post">I need to access your Facebook account to post on your to your feed.</string>
+    <string name="fbhelper_need_to_access_your_account_to_set_status">I need to access your Facebook account to set your status.</string>
+    <string name="fbhelper_need_to_access_your_account_to_read_feed">I need to access your Facebook account to read your feed.</string>
+    <string name="learnattribute_address_after_text_input">Thank you, I will remember it and you can use it in your future requests!</string>
+    <string name="learnattribute_address_promt">Please type the address</string>
+    <string name="learnattribute_username_after_text_input">Thank you ${username}!</string>
+    <string name="learnattribute_username_promt">How should I address you?</string>
+    <string name="etamonitor_preamble_for">For</string>
+    <string name="etamonitor_preamble_have_a_choice">You have a choice between</string>
+    <string name="etamonitor_preamble_routes_take">routes. Either take</string>
+    <string name="etamonitor_preamble_route_take"> take</string>
+    <string name="etamonitor_about">, about</string>
+    <string name="etamonitor_things_go_well">if things go well,</string>
+    <string name="etamonitor_you_can_take">. Or, you can take</string>
+    <string name="etamonitor_also_you_can_take">. You could also take</string>
+    <string name="etamonitor_again">Again,</string>
+    <string name="etamonitor_not_find_any_traffic">I could not find any traffic information, possibly just because all is clear</string>
+    <string name="etamonitor_ask_me_to_navigate">. For detailed directions, ask me to navigate you to</string>
+    <string name="etamonitor_hours">hours</string>
+    <string name="etamonitor_hour">hour</string>
+    <string name="etamonitor_minutes">minutes</string>
+    <string name="etamonitor_your_location">your location</string>
+    <string name="etamonitor_check_traffic">let me check traffic between</string>
+    <string name="etamonitor_and">and</string>
+    <string name="etamonitor_to">to</string>
+    <string name="etamonitor_route_number">Route number</string>
+    <string name="utils_today">Today</string>
+    <string name="utils_yesterday">Yesterday</string>
+    <string name="utils_tomorrow">Tomorrow</string>
+    <string name="utils_at">at</string>
+    <string name="poidetails_review">review</string>
+    <string name="poidetails_reviews">reviews</string>
+    <string name="poi_openning_hours">Openning Hours</string>
+
+
+    <string-array name="facebookNewsPhrases">
+        <item>, shared by ${name}.</item>
+        <item>, recommended by ${name}.</item>
+        <item>, upvoted by ${name}.</item>
+        <item>, suggested by ${name}</item>
+        <item>, curated by ${name}.</item>
+        <item>, shared by ${name}.</item>
+     </string-array>
+
+    <string name="default_username">Buddy</string>
+    <string name="toast_prefix_you">You:</string>
+    <string name="toast_prefix_Robin">Robin:</string>
+
+    <string name="P_teach_q_say">Please say the phrase you want to teach me</string>
+    <string name="P_teach_q_confirm">I heard:</string>
+    <string name="P_teach_q_type">Type phrase</string>
+    <string name="P_teach_a_say">And when you say: </string>
+    <string name="P_teach_a_say2">, what should my response be?</string>
+    <string name="P_teach_a_confirm"> </string>
+    <string name="P_teach_a_type">Type response</string>
+    <string name="P_teach_ok">Thanks. New question and answer saved.</string>
+    <string name="P_teach_cancel">Cancel teaching</string>
+    <string name="P_teach_forget_confirm">Should I forget all your teaching?</string>
+    <string name="P_teach_forget">I forgot all that you had taught me</string>
+
+    <string name="E_network_communication">Oops, someone give me my network connection back!</string>
+    <string name="P_popping_up_silently">From now on I\'ll be popping up silently and listen to you first, instead of talking. If you want me to greet you every time, you can change that in my settings.</string>
+    <string name="M_select_from_phonebook">select manually ...</string>
+    <string name="M_more_contacts">more contacts ...</string>
+    <string name="P_select_contact_manually">Sorry, I\'ve not found such contact in your phonebook. 
+           Please, select a contact manually and I will learn.
+         </string>
+    <string name="P_select_contact_manually_i_will_learn"> Please choose manually and I will learn it. </string>
+    <string name="P_press_the_back_key__textsting">Press the back key again to cancel texting.</string>
+    <string name="P_press_the_back_key__dialog">Press the back key again to cancel the dialog.</string>
+
+    <string name="PARKING">parking</string>
+
+    <string name="Robin_Prompt">This is Robin: I am listening</string>
+    <string name="ButtonMyLocation">Show my location</string>
+    <string name="ButtonHelp">Help me</string>
+
+    <string name="BUBLE_MENU_QUERY_REPEAT">Repeat</string>
+    <string name="BUBLE_MENU_QUERY_CORRECT">Teach me</string>
+    <string name="BUBLE_MENU_QUERY_FORGET">Forget teaching</string>
+    <string name="BUBLE_MENU_ANSWER_REPEAT">Say again</string>
+	<string name="BUBLE_MENU_ANSWER_SHARE">Share with a friend</string>
+	<string name="BUBLE_MENU_ANSWER_FEEDBACK">Report misunderstanding</string>
+
+    <string name="P_callfrom">Call from</string>
+    <string name="P_callautoaccept">call accepted automaticaly</string>
+    <string name="P_unfamiliar"> unknown number</string>
+
+    <string name="P_cmd_say">say</string>
+    <string name="P_cmd_teach">teach you</string>
+    <string name="P_first_POI_hint">You can also ask for more details, next one or to go there </string>
+
+    <string name="P_hint_suzie">You can ask me:</string>
+
+    <string name="P_tray_robin_title">Button</string>
+    <string name="P_tray_robin_hint_on">Floating button is On</string>
+    <string name="P_tray_robin_hint_off">Floating button is Off</string>
+
+    <string name="P_tray_car_title">In car</string>
+    <string name="P_tray_car_hint_on1">Car mode is On</string>
+    <string name="P_tray_car_hint_on2">Car mode is On. Call and text alerts enabled</string>
+    <string name="P_tray_car_hint_off">Car mode is Off</string>
+
+    <string name="P_tray_phone_title">Alert</string>
+    <string name="P_tray_phone_hint_on">Call alerts are On</string>
+    <string name="P_tray_phone_hint_off">Call alerts are Off</string>
+
+    <string name="P_tray_sms_title">Alert</string>
+    <string name="P_tray_sms_hint_on">SMS alerts are On</string>
+    <string name="P_tray_sms_hint_off">SMS alerts are Off</string>
+
+    <string name="P_tray_sms_cals_hint_on">SMS and call alerts are On</string>
+
+    <string name="P_tray_hand_title">Waving</string>
+    <string name="P_tray_hand_hint_on">Button hand waving activation is On</string>
+    <string name="P_tray_hand_hint_off">Button hand waving activation is Off</string>
+
+    <string name="P_tray_close_title">Close panel</string>
+    <string name="P_tray_close_confirm">Really close Robin panel? This will disable the floating button too!</string>
+
+    <string name="P_tray_teach_title">Teach</string>
+    <string name="P_tray_help_title">Help</string>
+    <string name="P_tray_settings_title">Settings</string>
+    <string name="P_suzie_introduction">I am Robin\'s floating button. Move me around or stow me under the edge of your screen. Tap me for quick access.</string>
+
+    <string name="P_tray_restore">If you would like to restore it, go to Robin\'s settings</string>
+
+    <string name="M_widget_header">TRENDING JOKE:</string>
+
+    <string name="P_sms_part_deleted">ok, so i got:</string>
+    <string name="P_sms_all_deleted">starting over</string>
+    <string name="P_sms_canceled">Message cancelled</string>
+    <string name="P_sms_finished">ok sending</string>
+    <string name="P_sms_help_show">Voice commands:\nsend, cancel, undo, delete, clear all, replace</string>
+    <string name="P_sms_help_say_start">Dictate message or cancel</string>
+    <string name="P_sms_help_say_continue"> Resume dictation or send it?</string>
+    <string name="P_sms_help_waiting">Dictate message...</string>
+    <string name="P_sms_say_message">say message</string>
+    <string name="P_sms_say_message_for">say message for</string>
+    <string name="P_sms_say_message_for_confirm_car_part1">message for</string>
+    <string name="P_sms_say_message_for_confirm">send this message?</string>
+    <string name="P_sms_cmd_delete">change/correct/edit/undo/no/delete/delete this</string>
+    <string name="P_sms_cmd_delete_twice">delete twice</string>
+    <string name="P_sms_cmd_cancel">cancel/cancel all</string>
+    <string name="P_sms_cmd_finish">finish/done/send</string>
+    <string name="P_sms_cmd_clear">clear/clear all/delete all/clear message</string>
+    <string name="P_sms_info">Texting</string>
+
+    <string name="P_mail_part_deleted">ok, so i got:</string>
+    <string name="P_mail_all_deleted">starting over</string>
+    <string name="P_mail_canceled">E-Mail cancelled</string>
+    <string name="P_mail_finished">ok sending</string>
+    <string name="P_mail_help_show">Voice commands:\nsend, cancel, undo, delete, clear all, replace</string>
+    <string name="P_mail_help_say_start">start dictation or say cancel</string>
+    <string name="P_mail_help_say_continue">continue dictation or say: delete, send, cancel</string>
+    <string name="P_mail_help_waiting">Dictate e-mail...</string>
+    <string name="P_mail_say_message">say text</string>
+    <string name="P_mail_say_message_for">say text for</string>
+    <string name="P_mail_say_message_for_confirm_car_part1">email for</string>
+    <string name="P_mail_say_message_for_confirm">send this email?</string>
+    <string name="P_mail_cmd_delete">change/correct/edit/undo/no/delete/delete this</string>
+    <string name="P_mail_cmd_delete_twice">delete twice</string>
+    <string name="P_mail_cmd_cancel">cancel/cancel all</string>
+    <string name="P_mail_cmd_finish">finish/done/send</string>
+    <string name="P_mail_cmd_clear">clear/clear all/delete all/clear message</string>
+    <string name="P_mail_info">Email for</string>
+
+    <string name="P_note">A note</string>
+    <string name="P_note_receiver">MySelf</string>
+    <string name="P_note_fail">You dont have email</string>
+
+    <string name="P_airplane_fail_auto">Here you can switch airplane mode on</string>
+
+    <string name="P_type_option">Type query</string>
+    <string name="P_share_option">Share Robin...</string>
+
+    <string name="P_feedback">Feedback to my parents</string>
+    <string name="P_call_hint">call</string>
+    <string name="P_text_hint_for_sms">Text</string>
+    <string name="P_my_query">My query:</string>
+    <string name="P_robin_answer">Robin answer:</string>
+    <string name="P_robin_promo">Robin - your personal assistant on the road</string>
+
+    <string name="P_translate_message">I couldn\'t translate now. Let\'s try again later.</string>
+    <string name="P_no_messages_to_read">There are no messages to read.</string>
+    <string name="M_continue_with_system_voice">Use System Voice</string>
+
+    <string name="P_launching_intent">Launching Intent</string>
+
+	<string name="P_wind">Wind:</string>
+	<string name="P_current_conditions">Current Conditions</string>
+	<string name="P_today">Today</string>
+	<string name="P_voice_download_troubles">I have troubles with my voice download, a system voice will be used.</string>
+	<string name="P_alyona_voice_expired">You should upgrade Robin, to continue using of this voice.</string>
+
+    <string-array name="sayOnStart">
+        <item>I\'ve improved my texting skills: now you can send long messages and edit them by voice. Try me!</item>
+        <item>You can ask me to Turn on flashlight.</item>
+    </string-array>
+
+    <string name="P_showing_traffic">Showing traffic near you</string>
+
+
+    <!--daily update-->
+    <string name="ok_confirm">OK</string>
+    <string name="scan_start">", If you don\'t mind, I\'m gonna look through your data.. \n\nLets start with "</string>
+    <string name="recap_done">".. that's all for now."</string>
+    <string name="following_meetings">"You have the following meetings in the next 7 days:\n\n"</string>
+    <string name="meeting_entry">at %1$s"</string>
+    <string name="today_on">today on </string>
+    <string name="tomorrow_on">tomorrow on </string>
+    <string name="on_">on </string>
+    <string name="busy_week">You have a busy week ahead of you..</string>
+    <string name="light_schedule">You have a fairly light schedule this week..</string>
+    <string name="call_back">, you might want to call them back, they called </string>
+    <string name="call_count">You have </string>
+    <string name="call_popular">wow, you\'re quite popular! </string>
+    <string name="people_to_call">People you need to return calls to.. </string>
+    <string name="call_didnt_return"> calls you haven\'t had the chance to return:</string>
+    <string name="_from_"> from </string>
+    <string name="recent_texts">Your text messages from the past 24 hours:</string>
+    <string name="read_your_email">Let me read you some of your email messages..</string>
+    <string name="_wrote_"> wrote: </string>
+    <string name="someone">Someone</string>
+    <string name="no_subject_mail"> an email without a subject </string>
+    <string name="interesting_news">Here are some headlines that you might find interesting..</string>
+    <string name="please_wait">One moment please...</string>
+    <!--smart hello-->
+    <string name="hello">Hi</string>
+    <string name="give_me_password">Ok, but I\'ll need your password for that. Go into settings and enter the code.</string>
+    <string name="fetch_email">Ok, let me fetch your email real quick...</string>
+    <string name="meeting_subject">Meet-up</string>
+    <string name="meeting_body">Lets meet for coffee</string>
+    <string name="meeting_location">The coffee shop</string>
+    <string name="sms_to_friend">What\'s up? how are you?</string>
+    <string name="spoken_alerts_title">Use Robin on the road?</string>
+    <string name="spoken_alerts_description">Spoken Caller ID, Text Messages</string>
+    <string name="spoken_alerts_off">No</string>
+    <string name="spoken_alerts_never">Never</string>
+    <string name="spoken_alerts_on">Yes</string>
+
+    <string name="app_exit_confirm">Shut Down</string>
+    <string name="app_notification_title1">Robin</string>
+    <string name="app_notification_title2">Robin is listening to you</string>
+    <string name="app_notification_default">Click to activate</string>
+    <string name="app_notification_read_sms">Spoken Text messages</string>
+    <string name="app_notification_caller_id">Caller ID are on</string>
+    <string name="app_notification_voice_activation">Voice activation</string>
+    <string name="toast_restart_voice_activation">Please restart Robin to activate</string>
+    <string name="app_notification_hand_waving">Hand waving</string>
+
+    <string name="app_notification_shutdown">Stop Robin</string>
+
+    <string name="shutdown_alert">Spoken Text messages &amp; caller ID will be stopped.</string>
+
+    <string name="suggest_recent_calls">How can I help you? Want me to go over your recent calls and see who you should get back to?</string>
+    <string name="suggest_agenda">What can I do for you? Want me to read you the agenda for this week?</string>
+    <string name="suggest_gmail">What would you like me to do? Want me to go over your gmail inbox?</string>
+    <string name="suggest_event">Whats up? Want to organize an event and meet with friends?</string>
+    <string name="suggest_music">What do you feel like doing? Want to listen to some music?</string>
+    <string name="suggest_news">Hey, are you up to date? Want me to read you some news?</string>
+    <string name="suggest_traffic">Going to %1$s? Want me to check traffic conditions?</string>
+    <string name="suggest_voca">Hey, do you text and drive? Want to try my new app to text by voice?</string>
+
+    <string name="start_voca1">Choose a contact</string>
+    <string name="start_voca2">Start dictation</string>
+    <string name="start_voca3">Start dictating a message for </string>
+
+    <string name="try_voca1">By the way, here is a new voice texting app from my creators. We work smoothly together - check it out!</string>
+    <string name="try_voca2">Oh, and here is a new voice texting app from my creators. It\'s pretty neat, you should try it!</string>
+
+   <string name="P_CustomVoicesAreNotAvl">Custom voices are not yet available for your Android version.</string>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wordsWithApostrophe">
+		<item>haven\'t</item>
+		<item>hadn\'t</item>
+		<item>don\'t</item>
+		<item>hasn\'t</item>
+		<item>doesn\'t</item>
+		<item>didn\'t</item>
+		<item>aren\'t</item>
+		<item>isn\'t</item>
+		<item>ain\'t</item>
+		<item>weren\'t</item>
+		<item>wasn\'t</item>
+		<item>can\'t</item>
+		<item>couldn\'t</item>
+	    <item>shouldn\'t</item>
+		<item>willn\'t</item>
+		<item>wouldn\'t</item>
+		<item>i\'m</item>
+		<item>you\'re</item>
+		<item>i\'ll</item>
+		<item>we\'ll</item>
+		<item>they\'re</item>
+		<item>where\'s</item>
+		<item>i\'ve</item>
+		<item>you\'ve</item>
+		<item>what\'s</item>
+		<item>it\'s</item>
+		<item>when\'s</item>
+		<item>how\'s</item>
+		<item>we\'ve</item>
+    </string-array>
+</resources>

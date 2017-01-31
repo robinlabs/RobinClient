@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PfYahooDomain">
+        <item>yahoo.ae</item>
+        <item>yahoo.at</item>
+        <item>yahoo.be</item>
+        <item>yahoo.fr</item>
+        <item>yahoo.be</item>
+        <item>yahoo.nl</item>
+        <item>yahoo.ca</item>
+        <item>yahoo.ch</item>
+        <item>yahoo.co.id</item>
+        <item>yahoo.co.il</item>
+        <item>yahoo.co.in</item>
+        <item>yahoo.in</item>
+        <item>yahoo.co.jp</item>
+        <item>yahoo.co.kr</item>
+        <item>yahoo.co.nz</item>
+        <item>yahoo.co.th</item>
+        <item>yahoo.co.uk</item>
+        <item>yahoo.co.za</item>
+        <item>yahoo.com</item>
+        <item>yahoo.com.ar</item>
+        <item>yahoo.com.au</item>
+        <item>yahoo.com.br</item>
+        <item>yahoo.com.cn</item>
+        <item>yahoo.cn</item>
+        <item>yahoo.com.hk</item>
+        <item>yahoo.com.mx</item>
+        <item>yahoo.com.my</item>
+        <item>yahoo.com.ph</item>
+        <item>yahoo.com.sg</item>
+        <item>yahoo.com.tr</item>
+        <item>yahoo.com.tw</item>
+        <item>yahoo.com.vn</item>
+        <item>yahoo.cz</item>
+        <item>yahoo.de</item>
+        <item>yahoo.dk</item>
+        <item>yahoo.es</item>
+        <item>yahoo.fi</item>
+        <item>yahoo.fr</item>
+        <item>yahoo.gr</item>
+        <item>yahoo.ie</item>
+        <item>yahoo.it</item>
+        <item>yahoo.nl</item>
+        <item>yahoo.no</item>
+        <item>yahoo.pl</item>
+        <item>yahoo.pt</item>
+        <item>yahoo.ro</item>
+        <item>yahoo.ru</item>
+        <item>yahoo.se</item>
+        <item>ymail.com</item>
+        <item>rocketmail.com</item>
+    </string-array>
+</resources>

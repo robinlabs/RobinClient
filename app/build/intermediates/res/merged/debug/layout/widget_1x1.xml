@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/WidgetButton"
+    android:layout_width="79dp"
+    android:layout_height="79dp"
+    android:background="@drawable/microphone_button_ss"
+    android:clickable="true" />

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:maxLevel="0"  android:minLevel="0" android:drawable="@drawable/mcanim_0000"/> 
+<item android:maxLevel="1"  android:minLevel="1" android:drawable="@drawable/mcanim_0001"/> 
+<item android:maxLevel="2"  android:minLevel="2" android:drawable="@drawable/mcanim_0002"/> 
+<item android:maxLevel="3"  android:minLevel="3" android:drawable="@drawable/mcanim_0003"/> 
+<item android:maxLevel="4"  android:minLevel="4" android:drawable="@drawable/mcanim_0004"/> 
+<item android:maxLevel="5"  android:minLevel="5" android:drawable="@drawable/mcanim_0005"/> 
+<item android:maxLevel="6"  android:minLevel="6" android:drawable="@drawable/mcanim_0006"/> 
+<item android:maxLevel="7"  android:minLevel="7" android:drawable="@drawable/mcanim_0007"/> 
+<item android:maxLevel="8"  android:minLevel="8" android:drawable="@drawable/mcanim_0008"/> 
+<item android:maxLevel="9"  android:minLevel="9" android:drawable="@drawable/mcanim_0009"/> 
+<item android:maxLevel="10"  android:minLevel="10" android:drawable="@drawable/mcanim_0010"/> 
+<item android:maxLevel="11"  android:minLevel="11" android:drawable="@drawable/mcanim_0011"/> 
+<item android:maxLevel="12"  android:minLevel="12" android:drawable="@drawable/mcanim_0012"/> 
+<item android:maxLevel="13"  android:minLevel="13" android:drawable="@drawable/mcanim_0013"/> 
+<item android:maxLevel="14"  android:minLevel="14" android:drawable="@drawable/mcanim_0014"/> 
+<item android:maxLevel="15"  android:minLevel="15" android:drawable="@drawable/mcanim_0015"/> 
+<item android:maxLevel="16"  android:minLevel="16" android:drawable="@drawable/mcanim_0016"/> 
+<item android:maxLevel="17"  android:minLevel="17" android:drawable="@drawable/mcanim_0017"/> 
+<item android:maxLevel="18"  android:minLevel="18" android:drawable="@drawable/mcanim_0018"/> 
+<item android:maxLevel="19"  android:minLevel="19" android:drawable="@drawable/mcanim_0019"/> 
+<item android:maxLevel="20"  android:minLevel="20" android:drawable="@drawable/mcanim_0020"/> 
+</level-list>

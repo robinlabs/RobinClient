@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- When a download completes, a notification is displayed, and this
+        string is used to indicate that the download successfully completed.
+        Note that such a download could have been initiated by a variety of
+        applications, including (but not limited to) the browser, an email
+        application, a content marketplace. -->
+    <string name="notification_download_complete">Скачивание завершено</string>
+    <!-- When a download completes, a notification is displayed, and this
+        string is used to indicate that the download failed.
+        Note that such a download could have been initiated by a variety of
+        applications, including (but not limited to) the browser, an email
+        application, a content marketplace. -->
+    <string name="notification_download_failed">Скачивание не удалось</string>
+    <string name="state_unknown">Начинаю..."</string>
+    <string name="state_idle">Жду начала скачивания</string>
+    <string name="state_fetching_url">Ищу ресурсы для скачивания</string>
+    <string name="state_connecting">Соединяюсь с сервером для скачивания</string>
+    <string name="state_downloading">Скачиваю ресурсы</string>
+    <string name="state_completed">Скачивание завершено</string>
+    <string name="state_paused_network_unavailable">Скачивание приостановлено из-за проблем со связью</string>
+    <string name="state_paused_network_setup_failure">Скачивание приостановлено. Можешь ли ты открыть любой сайт в браузере?</string>
+    <string name="state_paused_need_cellular_permission">Скачивание приостановлено из-за недоступности Вай Фай</string>
+    <string name="state_paused_by_request">Скачивание приостановлено</string>
+    <string name="state_paused_wifi_disabled">Скачивание приостановлено потому что Вай Фай отключён</string>
+    <string name="state_paused_roaming">Скачивание приостановлено из-за роминга</string>
+    <string name="state_paused_sdcard_unavailable">Скачивание приостановлено из-за недоступности сд-карты</string>
+    <string name="state_failed_unlicensed">Скачивание не удалось, так как вы не приобрели аппликацию</string>
+    <string name="state_failed_fetching_url">Скачивание не удалось в виду не нахождения ресурсов</string>
+    <string name="state_failed_sdcard_full">Скачивание не удалось в виду того что на сд-карте нет места</string>
+    <string name="state_failed_cancelled">Скачивание отменено</string>
+    <string name="state_failed">Скачивание не удалось</string>
+    <string name="kilobytes_per_second">%1$s КБ/с</string>
+    <string name="time_remaining">Оставшееся время: %1$s</string>
+    <string name="time_remaining_notification">осталось %1$s</string>
+    
+    <string name="downloading_second_voice_title">Робин</string>
+    <string name="downloading_second_voice_description">пошла загрузка мужского голоса </string>
+    <string name="downloading_russian_voice_description">пошла загрузка русского голоса </string>
+    <string name="new_feature">Новый голос</string>
+    <string name="recommend_me">Порекомендуй меня</string>
+    <string name="shortcut_for_me">Ярлык для меня</string>
+    <string name="select_msg_receiver">Выбери получателя</string>
+    <string name="large_widget_caption">Панель Робин</string>
+    <string name="tray_launch_robin">Запустить Робин</string>
+    <string name="default_navigator">Waze</string>
+</resources>

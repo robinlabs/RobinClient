@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/BottomPanel"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_alignParentBottom="true"
+    android:clickable="true"
+    android:onClick="onListen"
+    android:padding="8dp"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo_icon_blue"
+        android:layout_marginBottom="4dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/BtnListen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:onClick="onListen"/>
+
+
+    <ImageView
+        android:id="@+id/MicAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/talk_circle_active"
+        android:visibility="gone"
+        android:layout_margin="4dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/MicAnimationBg"
+        android:visibility="gone"
+        android:src="@drawable/mic_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageButton
+        android:id="@+id/BtnSettings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_action_overflow"
+        android:background="@drawable/circle_back"
+        android:clickable="true"
+        android:onClick="onInfo"
+        />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:onClick="onSwitchMode"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_menu_mapmode"
+        android:background="@drawable/circle_back"
+        android:clickable="true"/>
+
+</RelativeLayout>

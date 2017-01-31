@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:visibility="visible"
+            android:orientation="vertical" >
+
+        <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/buble_query____"
+        layout="@layout/suzie_buble_query" />
+
+    <include
+	    android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/buble_answer____"
+        layout="@layout/suzie_buble_answer" />
+
+    <com.magnifis.parking.views.WeatherView
+        android:id="@+id/buble_weather____"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible" />
+      
+    <include
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:id="@+id/buble_message____"
+        layout="@layout/suzie_buble_message" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

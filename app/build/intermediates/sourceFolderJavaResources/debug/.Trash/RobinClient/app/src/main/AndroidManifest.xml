@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magnifis.parking"
+    android:installLocation="auto"
+    android:versionCode="129"
+    android:versionName="4.37" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.PROCESS_INCOMING_CALLS" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+
+
+    <!-- MobiDeals SDK -->
+    <!-- <uses-permission  android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" /> -->
+    <!-- monitoring phone calls to match deals -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!-- deal is displayed as overlay on top of other applications end of MobiDeals -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"/>l. -->
+    <!-- Required to access Google Play Licensing -->
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+<!--     <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+ -->
+    <!--
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGE" />
+
+
+    -->
+
+
+    <!-- <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/> -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- <uses-permission android:name="android.permission.USE_CREDENTIALS"/> -->
+
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.location.network android:required"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false" />
+
+    <!-- android:configChanges="orientation" -->
+
+    <application
+        android:name="com.magnifis.parking.App"
+        android:configChanges="orientation|screenSize"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:process="com.magnifis.parking"
+        android:screenOrientation="user" 
+        >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="310277872395686" />
+
+        <provider
+            android:name="com.magnifis.parking.TheRecentSuggestionsProvider"
+            android:authorities="com.magnifis.parking.search" />
+
+        <service android:name=".DailyNotificationListener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.magnifis.parking.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:persistent="true"
+            android:screenOrientation="user"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+            <!-- android:screenOrientation="portrait" -->
+            <intent-filter>
+                <action android:name="com.magnifis.parking.WAKE_UP" />
+                <action android:name="com.magnifis.parking.START_TEACH" />
+                <action android:name="com.magnifis.parking.TYPE" />
+                <action android:name="com.magnifis.parking.SHARE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.magnifis.parking.EXPANSION_DOWNLOADER_NOTIFICATION" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.ASSIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <service
+            android:name="com.magnifis.parking.MovementService" />
+
+        <service android:name="com.magnifis.parking.TheDownloader" />
+        <service
+            android:name="com.magnifis.parking.suzie.SuzieService"
+            android:configChanges="orientation|screenSize" />
+        <service
+            android:name="com.magnifis.parking.SmsNotificationService"
+            android:configChanges="orientation|screenSize" />
+
+        <receiver android:name="com.magnifis.parking.DnlAlarmReceiver" />
+        <receiver android:name="com.magnifis.parking.NetworkStatusReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <activity
+            android:name="com.magnifis.parking.PrefsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/SettingsTitle"
+            android:screenOrientation="user" />
+        <activity
+            android:name="com.magnifis.parking.RunCallbackActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="standard"
+            android:screenOrientation="user"
+            android:taskAffinity=".RunCallbackActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.magnifis.parking.ResultProxyActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="standard"
+            android:screenOrientation="user"
+            android:taskAffinity=".ResultProxyActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.magnifis.parking.HelpActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="user"
+            android:taskAffinity=".HelpActivity" >
+            <intent-filter>
+                <action android:name="com.magnifis.parking.OPEN_HELP" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.magnifis.parking.SendSmsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.magnifis.parking.SEND_SMS" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.magnifis.parking.SmsActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="user"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.magnifis.parking.ListenAndLaunchActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="user"
+            android:taskAffinity=".ListenAndLaunchActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.SEARCH_LONG_PRESS" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VOICE_COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.magnifis.parking.SMSReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.magnifis.parking.PhoneStatusReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.app.action.ENTER_CAR_MODE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.app.action.EXIT_CAR_MODE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.magnifis.parking.SmsStatusReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.magnifis.parking.SMS_SENT_OR_FAILED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.magnifis.parking.widgets.WidgetProvider"
+            android:label="@string/large_widget_caption" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+
+        <!--
+		<receiver android:name="com.magnifis.parking.widgets.Widget_1x1Provider" android:label="@string/widget_caption">
+        	<intent-filter>		
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+        	</intent-filter>
+        	<meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_1x1_provider" />
+		</receiver>        
+
+
+        -->
+
+        <!--
+        <receiver
+            android:name="com.magnifis.parking.widgets.Widget_NfyMenu_Provider"
+            android:label="@string/menu_widget_caption" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_nfy_menu_provider" />
+        </receiver>
+         -->
+
+        <activity
+            android:name="com.magnifis.parking.IntroSlidesActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".IntroSlidesActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Web"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.magnifis.parking.OPEN_WEB" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".YoutubeActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver android:name="com.magnifis.parking.ads.AdManager" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.magnifis.parking.DLReceiver"
+            android:exported="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".PlugInControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".GenericInstallTrackersReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        
+        <activity android:name="com.att.android.speech.ATTSpeechActivity" 
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|fontScale" />        
+        
+    </application>
+
+</manifest>

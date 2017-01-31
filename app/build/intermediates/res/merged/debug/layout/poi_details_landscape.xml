@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.magnifis.parking.views.ScalableLLShort xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical" >
+
+    <com.magnifis.parking.views.ScalableLLShort
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:onClick="onBrowse"
+        android:orientation="horizontal" >
+
+        <com.magnifis.parking.views.ScalableLLShort
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/Image"
+                android:layout_width="108px"
+                android:layout_height="108px"
+                android:background="@android:color/white"
+                android:padding="4px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_poi_image" />
+        </com.magnifis.parking.views.ScalableLLShort>
+
+        <com.magnifis.parking.views.ScalableLLShort
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="13px"
+            android:orientation="vertical" >
+
+            <com.magnifis.parking.views.FontFitTextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBrowse"
+                android:paddingBottom="2px"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/Category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+
+            <com.magnifis.parking.views.ScalableShort
+                android:layout_width="wrap_content"
+                android:layout_height="21px"
+                android:layout_marginTop="10px" >
+
+                <ImageView
+                    android:id="@+id/RatingImage"
+                    android:layout_width="84px"
+                    android:layout_height="17px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/BasedOnNReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="6px"
+                    android:layout_toRightOf="@id/RatingImage"
+                    android:textColor="@android:color/white"
+                    android:textSize="15px" />
+            </com.magnifis.parking.views.ScalableShort>
+        </com.magnifis.parking.views.ScalableLLShort>
+    </com.magnifis.parking.views.ScalableLLShort>
+
+    <com.magnifis.parking.views.ScalableLLShort
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:onClick="onBrowse"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="80px"
+            android:layout_marginTop="20px"
+            android:text="Read more at"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:textSize="24px" />
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onBrowse"
+            android:scaleType="centerInside"
+            android:src="@drawable/yelp_logo_100x50" />
+    </com.magnifis.parking.views.ScalableLLShort>
+
+</com.magnifis.parking.views.ScalableLLShort>

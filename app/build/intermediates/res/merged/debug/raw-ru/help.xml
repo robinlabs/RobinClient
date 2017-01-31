@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<help>
+  <title>Темы помощи</title>
+
+ 
+     <topic>
+  	 <name>Презентация ...</name>
+      <launch>.IntroSlidesActivity</launch>
+      <icon>button_free.png</icon>
+     </topic>
+  
+  
+    <topic>
+       <name>Настройки ...</name>
+       <launch>.PrefsActivity</launch>
+       <icon>maintenance.png</icon>
+  </topic>
+  
+  
+  <topic>
+          <name>Последние обновления</name>
+          <icon>Latest-skills.png</icon>
+          <example>Зажги фонарик</example>
+          <example>Пошли сообщение</example>
+          <example>Закрой все программки</example>
+          <example>Загадай загадку</example>
+          <example>Расскажи анекдот</example>
+          <example>Хочу пикантный анекдот</example>
+          <example>Скажи что нибудь умное</example>         
+          <example>Прочитай мои сообщения</example>
+          <example>Прослушать новую почту</example>          
+          <example>Прочитай мой фейсбук</example>          
+ </topic>
+  
+  <topic>
+          <name>Поиск и Навигация</name>
+          <icon>navigation.png</icon>
+          <example>Где я?</example>
+          <example>Где ближайший Макдональдс? / Могу я там припарковаться?</example>
+          <example>Найди мне Индийский ресторан в округе / А как насчет Французкого?</example>
+          <example>Мне хочется мороженного!</example>
+          <example>Порекомендуй мне хорошую кофейню / Какой у нее рейтинг?</example>         
+          <example>Шоколадница в Киеве</example>
+          <example>Показать спутниковую карту / обычную карту</example>          
+          <example>Увеличить масштаб / Уменьшить масштаб</example>          
+  </topic>
+    
+   <topic>
+          <name>Пробки</name>
+          <icon>traffic.png</icon>
+          <example>Какая ситуация с пробками вокруг?</example>
+          <example>Есть ли пробки по дороге домой?</example>  
+          <example>Пробки в Москве</example>          
+          <example>Сколько у меня возьмет времени добраться до работы?</example>
+ </topic>
+
+   <topic>
+          <name>Погода</name>
+          <icon>weather.png</icon>
+          <example>Какая погода в Нью йорке завтра?</example>
+          <example>Выпадет ли сегодня снег в Москве?</example>
+          <example>Понадобиться ли мне взять зонтик?</example>
+  </topic>
+
+   <topic>
+          <name>Развлечения</name>
+          <icon>fun.png</icon>
+          <example>Расскажи анекдот / А еще какой-нибудь</example>
+          <example>Проиграй Битлс</example>
+          <example>Дай мне мудрый совет</example>	       
+          <example>Загадай загадку</example>
+          <example>Прочитай мне стих</example>
+          <example>Скажи скороговорку</example>
+          <example>Цитата Стива Джобса</example>
+          <example>Расскажи мне пикантный анекдот</example>
+  </topic>
+  
+  <topic>
+          <name>Социальное</name>
+          <icon>social.png</icon>
+          <example>Что нового на моей Фейсбук ленте?</example>                       
+          <example>Прочитай новости Твиттера</example>
+          <example>Я хочу отредактировать свой Фейсбук статус</example>
+          <example>Сообщить свое местоположение</example>
+          <example>Послать свое местоположение в Твиттер</example>
+          <example>Поделиться последней шуткой с друзьями в Фейсбуке</example>          
+          <example>Переслать Робина</example>          
+  </topic>
+
+  <topic>
+          <name>Сообщения</name>
+          <icon>messages.png</icon>
+          <example>Прочитай мою последнюю почту</example>          
+          <example>Есть ли у меня новые сообщения?</example>          
+          <example>Смс Сергею</example>
+          <example>Пошли сообщение Ане, что я опаздываю</example>  
+          <example>Пошли емайл</example>
+          <example>Пошли сообщение в Твиттер</example>
+  </topic>
+
+   <topic>
+          <name>Звонки</name>
+          <icon>voice_dialing.png</icon>
+          <example>Позвони Мише</example>
+          <example>Набери номер Сергея Иванова</example>   
+          <example>Прослушай автоответчик</example>        
+          <example>Покажи мой список контактов</example>          
+  </topic>
+
+   <topic>
+         <name>Аппликации и Веб страницы</name>
+          <icon>open_apps.png</icon>
+          <example>Открой в контакте</example>          
+          <example>Закрой все програмки</example>  
+          <example>Зажги фонарик</example>        
+          <example>Хочу снять фотографию</example>        
+          <example>Включи GPS</example>
+          <example>Как делается Суши?</example>                                       
+          <example>Покажи мне картинки собак</example>                           
+          <example>Открой сайт cnn.com</example>  
+  </topic>
+  
+   <topic>
+          <name>Напоминалки и Будильник</name>
+          <icon>reminders.png</icon>
+          <example>Напомни мне позаниматься спортом вечером</example>
+          <example>Добавь напоминалку навестить родителей 15 Ноября</example>          
+          <example>Добавь встречу с Алексом в Четверг</example>          
+          <example>Разбуди меня завтра в 7 утра</example>
+          <example>Установи будильник через 15 минут</example>
+          <example>Покажи мое расписание на сегодня</example>                                                
+  </topic>
+    
+  <topic>
+          <name>Обучить Робин</name>
+          <icon>teach_robin.png</icon>
+          <example>Мое имя Настя</example>
+          <example>Мое день рождение 28 мая</example>
+          <example>Мой дом здесь</example>          
+          <example>Мой дом здесь</example>
+          <example>Поехали домой</example>
+          <example>Пробки по дороге на работу</example>
+  </topic>
+  
+   <topic>
+          <name>Различное</name>
+          <icon>misc.png</icon>
+          <example>Робин, что ты умеешь?</example>
+          <example>Переключись на мужской голос</example>
+          <example>Сколько время во Франции сейчас?</example>                    
+          <example>В котором часу восход солнца?</example>                    
+          <example>Посчитай 5 * 7 + 9</example>
+          <example>Ты супер!</example>
+          <example>Отзыв твоим родителям</example>
+          <example>Твоя новая версия</example>
+          <example noexec="true">И многое другое, просто спроси...</example>       
+  </topic>
+  
+</help>

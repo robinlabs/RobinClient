@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/WidgetLayout"
+        android:layout_width="300dp"
+        android:layout_height="95dp" 
+>
+
+      <!-- //479x197 
+         433x151
+        //(300*197/479)
+        (300*151/433)
+      -->
+      <RelativeLayout 
+          android:id="@+id/WidgetContent"
+	        android:layout_width="300dp"
+    	    android:layout_height="95dp"
+    	    android:layout_centerInParent="true"       
+    	    android:background="@drawable/widget_w_joke_bg"
+          >
+          <!-- 
+           w dp: 334*300/479
+           h dp: 114*300/479 
+           x dp: 88*300/479
+           y dp: 21*300/479
+           -->
+          <LinearLayout 
+            android:id="@+id/JokeArea"
+            android:layout_width="209dp"
+    	    android:layout_height="71dp"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_marginLeft="75dp"
+    	    android:layout_marginTop="13dp"
+    	    android:background="@drawable/joke_area_ss"
+    	    android:clickable="true"
+            />     
+    	<LinearLayout
+    	    android:id="@+id/WidgetButton"
+	        android:layout_width="79dp"
+    	    android:layout_height="79dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:background="@drawable/microphone_button_ss"
+       />
+       <TextView
+           android:id="@+id/WidgetText" 
+           android:layout_toRightOf="@id/WidgetButton"
+           android:layout_alignParentTop="true"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_marginTop="6dp"
+           android:layout_marginBottom="8dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="10dp"
+           android:textColor="#dffbff"
+           android:gravity="left|center_vertical"
+           android:maxLines="3" 
+         />
+       <!-- 
+        android:text="if a man is alone in the forest, without any woman, is he still very very wrong?"
+       android:ellipsize="marquee"
+        -->
+   </RelativeLayout>
+    
+</RelativeLayout>

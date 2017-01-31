@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/xml/widget_provider.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/xml/widget_provider.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/xml/widget_1x1_provider.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/xml/widget_1x1_provider.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/xml/searchable.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/xml/searchable.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/xml/widget_nfy_menu_provider.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/xml/widget_nfy_menu_provider.xml"
+    }
+]

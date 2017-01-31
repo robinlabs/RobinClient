@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/activation.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/activation_79ada75eea5f43308a060805d521117a63bdfa13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/jsoup-1.6.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="f5794fa7847465283436bd9843045033971d0b9b">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/jsoup-1.6.3_796cf6fe8f64aceda8a1272c5cf3d9f61448d70a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/additionnal.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/additionnal_10e3981bdd4091248367beeb99cb0ff86898c2a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/oauth-20090825.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="85a813619bc6e7262c703fe430dadad6c2faff8b">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/oauth-20090825_205f40ef87886b2c1ef1235fa341f8e03593b274.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3_cc971874f0a5a67ce92a235a5b2a437ce2624489.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/google-play-services.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="23023656ba91dc12e963cf7d5682db5d2aba6262">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/google-play-services_646b85c24f3613dabc3e2194780f51783f0c680e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-21.0.3_3053fb321ade8294a08d44828b7e45ed8869d1a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/commons-lang-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b0236b252e86419eef20c31a44579d2aee2f0a69">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/commons-lang-2.5_53c089c2503854b2ad8cff8d78141605c3947664.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/ATTSpeechKit.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e9435f66340f04354b7266618a7e75569b79e02c">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/ATTSpeechKit_2153f3d910225ef1b44b8873d6ac37a799726750.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/twitter4j-stream-3.0.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="165a96495e17eea21317e751dbb58017dfa5586b">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/twitter4j-stream-3.0.5_d2ac71302d3aa8dc0028523fd12bd0f0a4d9fad9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-21.0.3_c662c594f0a76d928c0dc1a5c932c3438e36e95f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/twitter4j-async-3.0.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="555b786793313a57294cade0d520bada8a30c1d8">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/twitter4j-async-3.0.5_1c262005361f0c87e19d3a23c60a01523f28e8b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/twitter4j-media-support-3.0.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="bb1f8304e38c7343f7861b92215676d10981fd3c">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/twitter4j-media-support-3.0.5_84cb5231c5ab1fa6f51a0e9e6635a920765c027d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/twitter4j-core-3.0.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="5999e1915b61b30c9fc40d5d1971906bb68aca6c">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/twitter4j-core-3.0.5_0db48299e0c7e9e7a767e50a1dfe6e6476d9fa14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/boilerpipe-1.2.0-android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c62521f9c12ef4fa3a9b3adf01f0ae38134b25fe">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/boilerpipe-1.2.0-android_1236a5c11ad6ca44e633be66396f6dbf653f621f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/libGoogleAnalyticsServices.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e887c6c9b31b39a39b0eaba981448b78902ea813">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/libGoogleAnalyticsServices_31882aa06fd080f04f895d33d1bfba2bf18866d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/mail.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="abb7166a1f8df56e401ac52b0d68bcf5bfd6d88b">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/mail_c289642258bfef2df39e992be38c558096f4176a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/pocketsphinx-android-0.8-nolib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="726679857bbdb31a63254c6ae6f6639ddc3f1733">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/pocketsphinx-android-0.8-nolib_ad94048ed2f758b66d8d0bcbf08787fe0c30b4e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3_90fba953648e58d24a97d05d8b22e78baeeec36c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/android-support-v7-recyclerview.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d0a070bea031e60ee29ccf4b7d730c32253efd34">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/android-support-v7-recyclerview_ce3d3c31677311b87dfac46b797d4db35fb4b7b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/libs/libphonenumber-5.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="64b2975dfd3f19a381e4d0f8da8a79677cb40f8e">
+        <dex dex="/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/pre-dexed/debug/libphonenumber-5.4_dc4dfceedffd6dbfa5c0a034a26b7d4e821ce30c.jar" />
+    </item>
+
+</items>

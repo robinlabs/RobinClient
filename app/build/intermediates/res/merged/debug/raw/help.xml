@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<help>
+  <title>Robin Help Topics</title>
+  
+  <topic>
+    <name>Tutorial...</name>
+    <launch>.IntroSlidesActivity</launch>
+    <icon>button_free.png</icon>
+  </topic>
+  
+  <topic>
+       <name>Settings...</name>
+       <launch>.PrefsActivity</launch>
+       <icon>maintenance.png</icon>
+  </topic>
+
+  <topic>
+          <name>Latest skills</name>
+          <icon>Latest-skills.png</icon>
+          <example>Daily update</example>
+          <example>Close all running apps</example>    
+          <example>Send a message</example>
+          <example>Make a note</example>  
+          <example>Ask me a riddle</example>                
+          <example>Teach Robin new responses</example>         
+ </topic>
+  <topic>
+          <name>Maps and Local</name>
+          <icon>navigation.png</icon>
+          <example>Where is the nearest Macy&#39;s? / Can I park there?</example>
+          <example>Find Thai restaurants in SF / How about French?</example>
+          <example>I feel like some ice cream!</example>
+          <example>Find a burger place / Does it have a good rating?</example>         
+          <example>Where am I?</example>
+          <example>Show satellite view / map view</example>          
+          <example>Zoom in / Zoom out</example>
+          <example>Clear the map</example>          
+  </topic>
+  <topic>
+          <name>Navigation, Traffic and Gas</name>
+          <icon>traffic.png</icon>
+          <example>Go to Lombard and Hyde street San Francisco</example>
+          <example>Directions to 100 Main street</example>
+          <example>How is the traffic around?</example> 
+          <example>Traffic in Boston</example>        
+          <example>Take me home</example> 
+          <example>Where is the cheapest gas in Santa Monica?</example>      
+          <example>How much does it cost?</example>
+          <example>Anything closer / cheaper?</example>
+          <example>Take me there!</example>
+  </topic>
+ 
+   <topic>
+          <name>Weather</name>
+          <icon>weather.png</icon>
+          <example>What's the weather like in San Diego tomorrow?</example>
+          <example>Is it snowing in Moscow?</example>
+          <example>Should I bring my umbrella today?</example>
+  </topic>
+   <topic>
+          <name>Fun</name>
+          <icon>fun.png</icon>
+          <example>Tell me a joke / How about another one</example>
+          <example>Wow moment / Words of wisdom</example>	       
+          <example>Give me my daily horoscope</example>
+          <example>Ask me a riddle</example>
+          <example>Play Beatles</example>
+          <example>Steve Jobs words</example>	 
+          <example>Read some poetry</example>	                   
+          <example>Tell me a spicy joke</example>
+  </topic>
+
+   <topic>
+          <name>News</name>
+          <icon>news.png</icon>
+          <example>Give me today's news</example>       
+          <example>How about business headlines?</example>            
+          <example>Listen to my personal news</example> 
+          <example>Read NBA news</example> 
+          <example>Show movie times in my area</example>
+          <example>Latest football scores</example>                           
+          <example>What's on TV tonight?</example>                           
+  </topic>
+
+  <topic>
+          <name>Social</name>
+          <icon>social.png</icon>
+          <example>Post to Facebook</example>                
+          <example>Read my Twitter feed</example>
+          <example>Share my location</example>
+          <example>Tweet my location</example>
+          <example>Share this on Facebook</example>          
+          <example>Send it to</example>
+          <example>Share Robin</example>          
+  </topic>
+
+  <topic>
+          <name>Messaging</name>
+          <icon>messages.png</icon>
+          <example>Read my email</example>          
+          <example>Do I have any new messages?</example>          
+          <example>Text Jane I am running late</example>  
+          <example>Send a message to Peter</example>
+          <example>Reply to the last message</example>         
+          <example>Send email</example>
+          <example>Tweet!</example>
+  </topic>
+
+   <topic>
+          <name>Voice dialing</name>
+          <icon>voice_dialing.png</icon>
+          <example>Call Michael</example>
+          <example>Dial Mr. Smith</example>   
+          <example>Call 123 456 789</example>            
+          <example>Listen to voicemail</example>        
+          <example>Show my contact list</example>          
+  </topic>
+   <topic>
+         <name>Apps and web pages</name>
+          <icon>open_apps.png</icon>
+          <example>Open Evernote</example>   
+          <example>Turn flashlight on (pre-Lollipop devices)</example>       
+          <example>Close all running apps</example>          
+          <example>Take a picture</example>        
+          <example>Turn on Wifi</example>
+          <example>How to make sushi?</example>                                       
+          <example>Show me pictures of dogs</example>                           
+          <example>Browse cnn.com</example>  
+  </topic>
+   <topic>
+          <name>Reminders and Alarms</name>
+          <icon>reminders.png</icon>
+          <example>Remind me to exercise tonight</example>
+          <example>Remember to visit parents on December 15th</example>          
+          <example>Add an appointment with Alex on Thursday</example>          
+          <example>Wake me up tomorrow at 7 am</example>
+          <example>Set an alarm in 15 minutes</example>
+          <example>Show my schedule for today</example>
+          <example>Make a note</example>
+  </topic>
+  <topic>
+          <name>Teach Robin</name>
+          <icon>teach_robin.png</icon>
+          <example>Teach Robin new responses</example>
+          <example>My name is Jessica</example>    
+          <example>My birthday is on May 28th</example>
+          <example>My home address is 235 Fulton street, San Francisco</example>          
+          <example>My home is here</example>          
+          <example>I work at 123 Broadway, New York</example>
+          <example>Go home</example>
+          <example>Traffic to my work</example>
+  </topic>
+   <topic>
+          <name>Miscellaneous</name>
+          <icon>misc.png</icon>
+          <example>Submit feedback</example>
+          <example>Robin, what can you do?</example>
+          <example>Switch to Male voice</example>
+          <example>Who is the US president?</example>          
+          <example>What time is it in France now?</example>                    
+          <example>What time is sunrise?</example>                    
+          <example>Calculate 5 * 7 + 9</example>
+          <example>How to say hello in Spanish?</example>
+          <example>How to spell Australia?</example>
+          <example>Synonym for the word beautiful</example>
+          <example>You are awesome!</example>
+          <example>Update me</example>
+          <example noexec="true">And much more, just ask ...</example>       
+  </topic>
+  
+</help>

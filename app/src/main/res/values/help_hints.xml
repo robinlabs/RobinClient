@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="helpHints">
+             <item>Did you notice my new floating button? It\'s always at your fingertips, and you can also stow it under the edge of your screen until you need it.</item>
+    	     <item>Did you know that you can text my funny jokes or smart quotes to your friends or share them on Facebook?</item>
+    		 <item>Did you know you can ask me for cheap gas in your area?</item>
+    		 <item>You can always ask me to switch to a male voice and back.</item>
+    		 <item>If you\'d like, I can show you the map in the satellite mode. Just ask me or make a long press on the map.</item>
+    		 <item>You can ask me, What\'s new on my Facebook feed? Among other things.</item>
+    		 <item>If you ask me for traffic to home or work, I can offer tips based on current conditions.</item>
+    		 <item>Did you know that I can read your new emails and messages out loud as you go?</item>
+    		 <item>Did you know I could deliver top news headlines?</item>
+    		 <item>To listen to text messages as they arrive, just check "read SMS instantly" in my settings!</item>
+    		 <item>Oh, you can ask me to update your Facebook status. Just so all your friends see how cool you are!</item>
+    		 <item>Oh, I can read your twitter feed to you, while you are focused on the important stuff.</item>
+    		 <item>Did you know I could fetch your daily horoscope, if you ever felt like it?</item>
+    		 <item>You can ask me for funny or spicy jokes. And if you like them, I can share them for you on Facebook.</item>
+    		 <item>To get your morning started, ask me for a motivation quote any day!</item>
+    		 <item>Craving some spaghetti? Ask me for the best Italian restaurant around!</item>
+    		 <item>Looking for parking? Just ask me to help!</item>
+    		 <item>Seen my floating button yet? Always at your fingertips and easy to stow under the edge of your screen until you need it.</item>
+    		 <item>Planning on exercising tonight? Ask me to remind you and make no excuses!</item>
+    		 <item>Seriously, you should teach me where your home and work are. Just say, my home is at such and such place!</item>
+    		 <item>Did you know that I can quickly fetch local movie showtimes?</item> 
+             <item>Is it snowing in Moscow? Admit it, you’re curious.</item> 
+             <item>You know, I’m thinking of becoming an English major. I have some favorite poems that I’d love to recite to you personally!</item>
+   			 <item>Have you seen my widget? On top of being a quick shortcut, it can tell you my trending jokes!</item>
+  </string-array>
+
+</resources>

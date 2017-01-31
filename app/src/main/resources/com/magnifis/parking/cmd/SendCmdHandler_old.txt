@@ -1,0 +1,600 @@
+package com.magnifis.parking.cmd;
+
+
+import static com.magnifis.parking.tts.MyTTS.speakText;
+import static com.magnifis.parking.utils.Utils.*;
+
+import java.lang.ref.WeakReference;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import android.app.Activity;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.database.DatabaseUtils;
+import android.graphics.Color;
+import android.net.Uri;
+import android.provider.Contacts.People;
+import android.provider.ContactsContract;
+import android.telephony.PhoneNumberUtils;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.StyleSpan;
+import android.util.Pair;
+import android.view.Gravity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
+
+import com.google.i18n.phonenumbers.NumberParseException;
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat;
+import com.google.i18n.phonenumbers.Phonenumber;
+import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber;
+import com.magnifis.parking.Abortable;
+import com.magnifis.parking.App;
+import com.magnifis.parking.Config;
+import com.magnifis.parking.phonebook.IPhonebookMatcher;
+import com.magnifis.parking.Launchers;
+import com.magnifis.parking.Log;
+import com.magnifis.parking.MainActivity;
+import com.magnifis.parking.phonebook.PhoneticMatcher;
+import com.magnifis.parking.MultipleEventHandler;
+import com.magnifis.parking.MultipleEventHandler.EventSource;
+import com.magnifis.parking.OurAsyncTask;
+import com.magnifis.parking.Output;
+import com.magnifis.parking.R;
+import com.magnifis.parking.SmsActivity;
+import com.magnifis.parking.TextMessageQue;
+import com.magnifis.parking.UnderstandingProcessorBase;
+import com.magnifis.parking.VR;
+import com.magnifis.parking.VoiceIO;
+import com.magnifis.parking.cmd.etc.CmdHandlerHolder;
+import com.magnifis.parking.cmd.i.ActivityResultHandler;
+import com.magnifis.parking.cmd.i.ClientStateInformer;
+import com.magnifis.parking.cmd.i.ICmdHandlerHolder;
+import com.magnifis.parking.cmd.i.IIntentHandler;
+import com.magnifis.parking.cmd.i.LocalCommandHandler;
+import com.magnifis.parking.cmd.i.MagReplyHandler;
+import com.magnifis.parking.cmd.i.OnBeforeListeningHandler;
+import com.magnifis.parking.cmd.i.OnListeningAbortedHandler;
+import com.magnifis.parking.cmd.i.OnResumeHandler;
+import com.magnifis.parking.db.RobinDB;
+import com.magnifis.parking.feed.SmsFeedController;
+import com.magnifis.parking.messaging.Message;
+import com.magnifis.parking.model.BrokenPhoneNumber;
+import com.magnifis.parking.model.CalleeAssociation;
+import com.magnifis.parking.model.CalleeAssociationCR;
+import com.magnifis.parking.model.CmdAlias;
+import com.magnifis.parking.model.ContactRecordBase;
+import com.magnifis.parking.model.ContactRecord;
+import com.magnifis.parking.model.MagReply;
+import com.magnifis.parking.model.QueryInterpretation;
+import com.magnifis.parking.model.Understanding;
+import com.magnifis.parking.phonebook.SearchResult;
+import com.magnifis.parking.phonebook.NeoPhonebookMatcher;
+import com.magnifis.parking.phonebook.PhoneBook;
+import com.magnifis.parking.tts.MyTTS;
+import com.magnifis.parking.utils.BaseUtils;
+import com.magnifis.parking.utils.Langutils;
+import com.magnifis.parking.utils.CommonNames;
+import com.magnifis.parking.utils.Translit;
+import com.magnifis.parking.utils.Utils;
+import com.magnifis.parking.views.DecoratedListView;
+
+public class SendCmdHandler 
+  extends CmdHandlerBase
+  implements 
+     Abortable, MagReplyHandler, 
+     ClientStateInformer, OnListeningAbortedHandler ,
+     OnBeforeListeningHandler
+{
+	final static String TAG=SendCmdHandler.class.getSimpleName();
+	
+	private int state = 0;
+	private int dictationCounter=0;
+	private final static int DICTATE_NAME = 1;
+	private final static int DICTATE_MSG = 2;
+	private final static int CONFIRM_MSG = 3;
+	public final static int DICTATION_MAX_COUNTER = 2;
+	
+	
+    private  void setState(int newState) {
+    	switch (newState) {
+		case DICTATE_NAME:
+			state = DICTATE_NAME;
+			break;
+		case DICTATE_MSG:
+			state = DICTATE_MSG;
+			break;
+		case CONFIRM_MSG:
+			state = CONFIRM_MSG;
+			break;
+		default:
+		    state=0;
+			break;
+		}
+    	/*
+		if (getDictationCounter() > DICTATION_MAX_COUNTER)
+	       abort();
+	       */		    	
+    }
+    
+    private  void incDictationCounter(){
+    	dictationCounter++;
+    }
+    
+    private  int getDictationCounter(){
+    	return dictationCounter;
+    }        
+    	
+	public SendCmdHandler(Context context) {
+		super(context);	
+	}
+
+	
+	@Override
+	public String getClientStateName() {
+		if (isTimeoutTooLong()) {
+			inactivate();
+			Log.d(TAG, " deactivating by timeout ");
+			return null;
+		}
+		
+    	switch (state) {
+		case DICTATE_NAME:
+			 return ClientStateInformer.SN_DICTATE_NAME;
+		case DICTATE_MSG:
+             return ClientStateInformer.SN_DICTATE_MSG;
+		case CONFIRM_MSG:
+			return ClientStateInformer.SN_YES_NO;
+		}
+    	return null;
+	}
+	
+	private Understanding sendCommandUnderstanding=null;
+	//private MagReply sendCommandReply=null;
+
+	/********
+  <!-- dictate name -->
+<reply>
+<query>vasya</query>
+<gps_location>
+<lat>31.843073</lat>
+<lon>35.242203</lon>
+</gps_location>
+<command>dlg_dictation</command>
+<message>vasya</message>
+<query_interpretation/>
+</reply>
+
+    ****/
+	@Override
+	public boolean handleReplyInBg(MagReply reply) {
+		Understanding understanding=reply.getUnderstanding(); 
+		
+		touchLastInteractionTime();
+		boolean nameDictation=state==DICTATE_NAME;
+		 
+		switch(understanding.getCommandCode()) {
+		case Understanding.CMD_REPLY: 
+			 if (state==0&&sendCommandUnderstanding==null) {
+			   Message m=App.self.getLastMessageRead();
+			   if (m!=null) {
+				   if (!Config.allow_to_reply_sms_multiple_times)
+				     App.self.setLastMessageRead(null);
+				   String phone=m.getSender().getAddress();
+				   
+				   understanding
+				    .setCommandByCode(Understanding.CMD_SEND)
+				    .setAction("sms")
+				    .setNumber(true)
+				    .setDescription(phone)
+				  ;
+				   
+				  replyMode=true;
+				  
+				  recipientRecord=PhoneBook.getContactWithBestName(recipient=phone);
+		
+				  return handleReplyInBg(reply);
+			   }
+			 }
+			 inactivate();
+			 return false;
+		case Understanding.CMD_DO_IT:
+		case Understanding.CMD_YES:
+		case Understanding.CMD_NO:
+			 return true;
+		case Understanding.CMD_DICTATE:
+			if (!nameDictation) return true;
+		case Understanding.CMD_SEND:
+			if (nameDictation) {
+				understanding.fixContactNamesDictation();
+				sendCommandUnderstanding.setContactNames(understanding.getContactNames());
+				reply.setUnderstanding(understanding=sendCommandUnderstanding);
+			} else {
+			  if (!"sms".equalsIgnoreCase(understanding.getAction())) {
+				inactivate();
+				return false;
+			  }
+			  sendCommandUnderstanding=understanding;
+			}
+			if (understanding.isPhoneNumberGiven()) {
+				recipient=understanding.getDescription();
+			} else if (!isEmpty(understanding.getContactNames())) {
+				selectRecepientInBg(reply);
+			}
+			return true;
+		default:
+			if (state==CONFIRM_MSG) {
+				return true;
+			}
+		}
+		Utils.runInGuiAndWait(
+		  context, 
+		  new Runnable() {
+			@Override
+			public void run() {
+				VoiceIO.fireOpes();
+			}
+		  }
+		);
+		abortTtsThenShutdown();
+		return false;
+	}
+	
+	@Override
+	public boolean handleReplyInUI(MagReply reply) {
+		Understanding understanding=reply.getUnderstanding(); 
+		switch(understanding.getCommandCode()) {
+		case Understanding.CMD_DICTATE:
+			if (state==DICTATE_MSG) {
+			   sendCommandUnderstanding.setMessage(understanding.getMessage());
+			   setState(CONFIRM_MSG);
+			   sayRelevantOutputAndListen();
+			}
+			return true;
+		case Understanding.CMD_NO:
+			if (state==CONFIRM_MSG&&!understanding.isCancel()) {
+				incDictationCounter();
+				if (getDictationCounter() < DICTATION_MAX_COUNTER) {
+					sendCommandUnderstanding.setMessage(null);
+					setState(DICTATE_MSG);
+					sayRelevantOutputAndListen();
+					return true;
+				}
+				speakText(R.string.P_YOU_CAN_SEND_MESSAGE);
+				Launchers.composeTextMessage(context,sendCommandUnderstanding.getMessage(),
+					recipient, 
+					App.self.shouldAdvertInSms()
+				);
+			} else
+			    Output.sayAndShow(context, R.string.P_CANCELLING);
+			inactivate();
+			VoiceIO.fireOpes();
+			return true; 
+		case Understanding.CMD_YES:
+		case Understanding.CMD_DO_IT:
+			if (state!=CONFIRM_MSG) {
+				VoiceIO.fireOpes();
+				break; // just ignore
+			}
+			message_is_confirmed=true;
+			setState(0);
+			sayAndSendSMS();
+			return true;
+		case Understanding.CMD_SEND:
+			/*
+			if (csh!=null) {
+			    csh.handleReplyInUI(
+			       //sendCommandReply
+			       reply
+			    );	
+			} else*/
+			if (recipient==null) {
+				speakText(R.string.P_SAY_RECEIVER_NAME);
+				setState(DICTATE_NAME);
+				VoiceIO.listenAfterTheSpeech();
+			} else if (isEmpty(sendCommandUnderstanding.getMessage())) {
+				if (replyMode) {
+				   Output.sayAndShow(context, 
+						 App.self.getString(R.string.P_REPLYING)+" "+
+						   (recipientRecord==null?Utils.phoneNumberToSpeech(recipient):recipientRecord.getName()));
+				}
+				if (sendCommandUnderstanding.getLanguage() != null) {
+					speakText(
+					    App.self.getString(R.string.P_SAY_YOUR_MSG_LANG) + " " + sendCommandUnderstanding.getLanguage()
+				    );					
+				}
+				else
+					speakText(R.string.P_SAY_YOUR_MSG);
+				setState(DICTATE_MSG);
+				VoiceIO.listenAfterTheSpeech();
+			} else if (!message_is_confirmed) {
+				setState(CONFIRM_MSG);
+				sayRelevantOutputAndListen();
+			} else {
+				// the message and the recipient are known , do send
+				// this is an impossible state	
+			}
+			return true;
+		default:
+			if (state==CONFIRM_MSG) {
+				speakText(new MyTTS.BubblesInMainActivityOnly(R.string.P_YES_OR_NO));
+				VoiceIO.listenAfterTheSpeech();
+				return true;
+			}
+			;
+		}
+		return false;
+	}	
+	
+	
+	private String recipient=null;
+	private ContactRecord recipientRecord=null;
+	private boolean message_is_confirmed=false,  replyMode=false;
+
+	private CalleeSelectionHandler csh=null;
+	
+	private void selectRecepientInBg(MagReply reply) {
+		csh=new CalleeSelectionHandler(context) {
+			
+			@Override
+			public boolean isInSmsMode() {
+			  return true;
+			}
+			
+			@Override
+			protected void giveUp() {
+			  Log.d(TAG, "give up");
+			  super.giveUp();
+			  SendCmdHandler.this.abortTtsThenShutdown();
+			}
+			
+
+			@Override
+			public boolean performFinalAction(ContactRecord r, String cnames[]) {
+				recipientRecord=r;
+				return super.performFinalAction(r,cnames);
+			}
+
+			@Override
+			public boolean performFinalAction(String phoneNumber) {
+				touchLastInteractionTime();
+				recipient=phoneNumber;
+				//recipientRecord
+				String msg=sendCommandUnderstanding.getMessage();
+				if (message_is_confirmed) {
+					setState(0);
+					sendSMS();
+				} else 
+				if (isEmpty(msg)) {
+					setState(DICTATE_MSG);
+					VoiceIO.listenAfterTheSpeech();
+				} else {
+					Log.d(TAG, "confirm ...");
+					setState(CONFIRM_MSG);
+					VoiceIO.listenAfterTheSpeech();
+				}
+				inactivate();
+				return false;
+			}
+
+			@Override
+			public String getPerformByNumberString(String number) {
+                return null; // we does not support this mode here
+			}
+
+			@Override
+			public String getActionName() {
+				return "text";
+			}
+
+			@Override
+			public Pair<Object[], String> getPerformByContactRecordOutput(ContactRecord r, String q) {
+				return new Pair<Object[],String>(
+				  prepareRelevantOutput(r),
+				  q
+				);
+			}
+			
+			
+		};
+		ICmdHandlerHolder holder=CmdHandlerHolder.getCmdHandlerHolder(context);
+		holder.pushCommandHandler(csh);
+	    //sendCommandReply=reply.clone();
+	    //sendCommandReply.getUnderstanding().setCommandByCode(Understanding.CMD_CALL);
+	    sendCommandUnderstanding.setCommandByCode(Understanding.CMD_CALL);
+	    csh.handleReplyInBg(/*sendCommandReply*/reply);		
+	}
+	
+	private  void sayAndSendSMS() {
+		Output.sayOnlyOrSayAndShow(
+			context, 
+			false, 
+			null, 
+			new MyTTS.OnSaidListener() {
+
+				@Override
+				public void onSaid(boolean fAborted) {
+					if (fAborted) {
+						shutdown();
+					} else {
+						sendSMS();
+					}
+				}
+				
+			}, 
+			prepareRelevantOutput(recipientRecord)
+		);
+	}
+	
+	private void sayRelevantOutputAndListen() {
+		sayRelevantOutputAndListen(null);
+	}
+	
+	private void sayRelevantOutputAndListen(ContactRecord r) {
+		Output.sayOnlyOrSayAndShow(context, 
+				false, 
+				null, 
+				prepareRelevantOutput(r)
+		);
+		VoiceIO.listenAfterTheSpeech();
+	}
+	
+	
+	private Object [] prepareRelevantOutput(ContactRecord r) {
+		Object aa[]=_prepareRelevantOutput(r);
+		if (csh==null||!csh.isSilentlySelected()) return aa;
+		csh.clearSilentlySelected();
+		return cons(
+				   App.self.getString(R.string.mainactivity_onpostexecute_texting)
+				   + " "
+				   + translit.process(r.getName())
+			
+				,aa);
+	}
+	
+	private Translit translit=Translit.getHebRus();
+	
+	private Object [] _prepareRelevantOutput(ContactRecord r) {
+		String msg=sendCommandUnderstanding.getMessage();
+		if (isEmpty(msg)) {
+			if (sendCommandUnderstanding.getLanguage() != null) {
+				String s = App.self.getString(R.string.P_SAY_YOUR_MSG_LANG) + " " + sendCommandUnderstanding.getLanguage();
+				return new Object[] {s};					
+			}
+			else
+				if (dictationCounter>0)
+					return new Object[] {R.string.P_SAY_YOUR_MSG_AGAIN};
+				else
+					return new Object[] {R.string.P_SAY_YOUR_MSG};
+		} else
+		if (message_is_confirmed)
+		    return 
+		    	new Object[] {
+				   App.self.getString(R.string.mainactivity_onpostexecute_texting)
+				   + " "
+				   + (recipientRecord==null?Utils.phoneNumberToSpeech(recipient):translit.process(recipientRecord.getName()))+" "
+//			  	  + App.self
+//						.getString(R.string.mainactivity_onpostexecute_calling_tap_to_abort)
+		    	};
+		else {
+			return 
+			    	new Object[] {
+					/*
+			    		Output.Arg.say(new MyTTS.BubblesInMainActivityOnly(R.string.P_YOU_SAID).setShowInNewBubble(true)),
+			    		*/
+			    		Output.Arg.andShow(
+			    		  new MyTTS.Wrapper(formatMessageBody(msg)).setShowInNewBubble(true),
+			    		  msg
+			    	    ),
+			    		/*
+			    		Output.Arg.say(
+			    			new MyTTS.BubblesInMainActivityOnly(R.string.P_is_that_right)
+			    			 .setShowInNewBubble(true)
+			    			 .setShouldHideBubbles(false)
+			    		)
+			    		*/
+			    	};
+			    	
+		}		
+	}
+	
+	public static Spannable formatMessageBody(String s) {
+	  return Utils.styledString(Utils.firstUpper(s, true),  android.graphics.Typeface.ITALIC);
+	}
+	
+	SmsFeedController fc=null;
+	
+	boolean waitingForNfy=false;
+	
+	private  void sendSMS() {
+		inactivate();
+		Intent nfyIntent=new Intent(SmsFeedController.INTENT_SENT_OR_FAILED);
+		/*
+		nfyIntent.putExtra(
+		  SmsFeedController.COMPONENT, 
+		  new ComponentName(context,context.getClass())
+		);
+		*/
+		fc=SmsFeedController.getInstance();
+		fc.sendSms(recipient, sendCommandUnderstanding.getMessage(),nfyIntent);
+		waitingForNfy=true;
+		VoiceIO.fireOpes();
+	}
+
+
+
+	@Override
+	public void abort(int flags) {
+	   Log.d(TAG, "abort");
+	   Utils.runInGuiAndWait(
+		  context,
+		  new Runnable() {
+			@Override
+			public void run() {
+				Output.sayAndShow(
+					context, 
+					R.string.P_CANCELLING
+				); 
+			}
+		  }
+	   );
+	   shutdown();
+	}
+	
+	private void abortTtsThenShutdown() {
+		MyTTS.abort();
+		shutdown();		
+	}
+	
+	private boolean requires_inactivation=true;
+	
+	private void inactivate() {
+	  Log.d(TAG, "inactivate");
+	  if (requires_inactivation) {
+		requires_inactivation=false;
+		ICmdHandlerHolder holder=CmdHandlerHolder.getCmdHandlerHolder(context);
+		holder.removeCommandHandler(this);
+	  }
+	}
+	
+	protected void shutdown() {
+		inactivate();
+		VR.get().killMicrophone();
+	}
+
+	@Override
+	public void onListeningAbortedByBackKeyPressed() {
+		MyTTS.speakText(R.string.P_press_the_back_key__textsting);
+	}
+
+	@Override
+	public void onBeforeListening() {
+	   if (state==DICTATE_MSG) {
+		   Log.d(TAG, "onBeforeListening, state==DICTATE_MSG");
+		   VR.useFreeForm=true;
+		   if (sendCommandUnderstanding!=null)
+		      VR.useLanguage=sendCommandUnderstanding.getLanguage();
+	   }
+		
+	}
+
+}

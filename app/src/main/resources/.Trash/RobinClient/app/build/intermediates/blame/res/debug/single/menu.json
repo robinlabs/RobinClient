@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/menu/send_sms.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/menu/send_sms.xml"
+    },
+    {
+        "merged": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/vladgets/development/AndroidStudioProjects/RobinClient/app/src/main/res/menu/main.xml"
+    }
+]
